@@ -1,0 +1,86 @@
+.logo-date {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0 5px;
+}
+.logo-date img {
+  height: 20px;
+  margin-top: 4px;
+}
+.logo-date p {
+  margin-bottom: 0;
+}
+
+img {
+  margin: 6px 20px 20px 0;
+}
+
+.page-header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.main-page .page-header {
+  background-color: #bf0222;
+  padding: 23px 28px 15px;
+  margin: 0;
+  border-bottom: none;
+  color: #eee;
+}
+.main-page .page-header h1 {
+  display: inline-block;
+  margin: 0px;
+  letter-spacing: 0.01em;
+}
+.main-page .page-header button {
+  margin: 0 0 13px 13px;
+}
+.main-page ol {
+  background-color: #eee;
+  padding: 20px;
+  margin-left: 30px;
+}
+.main-page li {
+  margin-left: -52px;
+}
+.main-page .collapse, .main-page .collapse.in, .main-page .collapsing {
+  margin-left: 40px;
+}
+.main-page .well {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.main-page a, .main-page button {
+  color: #444;
+  text-align: left;
+  outline: none;
+  padding: 0;
+}
+.main-page a img, .main-page button img {
+  height: 64px;
+  margin: 0px;
+}
+.main-page a:hover, .main-page a:active, .main-page a:focus, .main-page button:hover, .main-page button:active, .main-page button:focus {
+  text-decoration: none;
+  color: #337ab7;
+}
+.main-page a .label-default, .main-page button .label-default {
+  letter-spacing: 0.12em;
+}
+.main-page .well a.btn {
+  margin-bottom: 5px;
+  padding: 6px 12px;
+}

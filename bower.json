@@ -1,0 +1,19 @@
+{
+  "name": "nature-strawberry",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Ryan <creditdesign@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

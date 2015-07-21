@@ -1,0 +1,18 @@
+{
+  "name": "nature-mosaic",
+  "devDependencies": {
+    "autoprefixer-core": "~4.0.1",
+    "csswring": "~2.0.0",
+    "grunt": "~0.4.0",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "~0.2.0",
+    "matchdep": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
