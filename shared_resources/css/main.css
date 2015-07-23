@@ -1,0 +1,175 @@
+@font-face {
+  font-family: headMain;
+  src: url("/shared_resources/fonts/GlosaMath-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: headBold;
+  src: url("/shared_resources/fonts/GlosaMath-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: prose;
+  src: url("/shared_resources/fonts/GlosaMath-RomanItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: proseBold;
+  src: url("/shared_resources/fonts/GlosaMath-BlackItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: body;
+  src: url("/shared_resources/fonts/NewsGothicMTOT-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: bodyItalic;
+  src: url("/shared_resources/fonts/NewsGothicMTOT-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: bodyBold;
+  src: url("/shared_resources/fonts/NewsGothicMTOT-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: knockSixtyNine;
+  src: url("/shared_resources/fonts/Knockout-69FullLiteweight.otf") format("opentype");
+}
+@font-face {
+  font-family: knockFourtyNine;
+  src: url("/shared_resources/fonts/Knockout49Liteweight-Regular.otf") format("opentype");
+}
+body {
+  font-family: body;
+  position: relative;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+i, em {
+  font-family: bodyItalic;
+}
+
+b, strong {
+  font-family: bodyBold;
+}
+
+.tool .logo-date {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0 5px;
+}
+.tool .logo-date img {
+  height: 20px;
+  margin-top: 4px;
+}
+.tool .logo-date p {
+  margin-bottom: 0;
+}
+.tool img {
+  margin: 6px 20px 20px 0;
+}
+.tool .page-header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.tool .page-header {
+  background-color: #bf0222;
+  padding: 23px 28px 15px;
+  margin: 0;
+  border-bottom: none;
+  color: #eee;
+}
+.tool .page-header h1 {
+  display: inline-block;
+  margin: 0px;
+  letter-spacing: 0.01em;
+}
+.tool .page-header button {
+  margin: 0 0 13px 13px;
+}
+.tool ol {
+  background-color: #eee;
+  padding: 20px;
+  margin-left: 30px;
+}
+.tool li {
+  margin-left: -52px;
+}
+.tool .collapse, .tool .collapse.in, .tool .collapsing {
+  margin-left: 40px;
+}
+.tool .well {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.tool a, .tool button {
+  color: #444;
+  text-align: left;
+  outline: none;
+  padding: 0;
+}
+.tool a img, .tool button img {
+  height: 64px;
+  margin: 0px;
+}
+.tool a:hover, .tool a:active, .tool a:focus, .tool button:hover, .tool button:active, .tool button:focus {
+  text-decoration: none;
+  color: #337ab7;
+}
+.tool a .label-default, .tool button .label-default {
+  letter-spacing: 0.12em;
+}
+.tool .well a.btn {
+  margin-bottom: 5px;
+  padding: 6px 12px;
+}
+
+.voice h1 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-family: bodyBold;
+}
+.voice .header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  padding-top: 8px;
+  background-color: #fff;
+  z-index: 999;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.voice .header .logo {
+  width: 80px;
+}
+.voice .header .search-icon {
+  width: 16px;
+}
+.voice .header .dots-icon {
+  width: 16px;
+}
+.voice .featured-article {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}

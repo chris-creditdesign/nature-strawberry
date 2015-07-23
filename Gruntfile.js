@@ -13,7 +13,7 @@ module.exports = function(grunt){
 			style: 'expanded',
 		},
 		files: {
-		  'css/main.css': 'sass/main.scss'
+		  'shared_resources/css/main.css': 'shared_resources/sass/main.scss'
 		}
 	  }
 	},
@@ -24,22 +24,22 @@ module.exports = function(grunt){
 		  autoprefixer({ browsers: ['> 1%'] }).postcss
 		]
 	  },
-	  dist: { src: 'css/*.css' }
+	  dist: { src: 'shared_resources/css/*.css' }
 	},
 
 	jshint: {
 	  files: {
-		src : 'scripts/*.js'
+		src : 'shared_resources/scripts/*.js'
 	  },
 	},
 
 	watch: {
 		css: {
-			files: ['sass/*.scss'],
+			files: ['shared_resources/sass/*.scss'],
 			tasks: ['buildcss']
 		},
 		js: {
-			files: ['site/scripts/*.js'],
+			files: ['shared_resources/scripts/*.js'],
 			tasks: ['jshint']
 		}
 	},
@@ -48,9 +48,10 @@ module.exports = function(grunt){
 		dev: {
 			bsFiles: {
 				src : [
-					'css/*.css',
-					'scripts/*.js',
-					'*.html'
+					'shared_resources/css/*.css',
+					'shared_resources/scripts/*.js',
+					'voice/*.html',
+					'tool/*.html'
 				]
 			},
 			options: {

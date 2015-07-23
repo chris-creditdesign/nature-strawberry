@@ -1,0 +1,18 @@
+// Typography
+body {
+	font-family: body;
+	position: relative;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+i, em {
+	font-family: bodyItalic;
+}
+
+b, strong {
+	font-family: bodyBold;
+}
