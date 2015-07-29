@@ -5,48 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nature front-half redesign</title>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/shared_resources/css/main.css">
+  <link rel="stylesheet" href="/shared_resources/css/voice.css">
 </head>
 <body data-grid-framework="b3" data-grid-color="red" data-grid-opacity="0.2" data-grid-zindex="100" data-grid-gutterwidth="30px" data-grid-nbcols="12" data-spy="scroll" data-target="#fast-scroll-toc">
 <!-- http://alefeuvre.github.io/foundation-grid-displayer/ -->
 
 <div class="container voice">
+
+	<div class="header-banner-advert hidden-xs">
+		<img src="/shared_resources/images/adverts/advert-728x90.jpg" alt="" class="img-responsive">
+	</div>
+
+
+	<!-- header -->
 	<div class="row ">
-		<div class="col-sm-12 col-xs-12 header">
-			<div class="hidden-sm hidden-xs">
-				<img src="/shared_resources/images/cover-placeholder.jpg" class="img-responsive" style="height: 64px;">
+		<div class="col-sm-12 col-xs-12 header-wrapper">
+			<div class="print-cover">
+				<img src="/shared_resources/images/cover-placeholder.jpg" class="img-responsive">
 			</div>
 
 			<div class="search-icon">
 				<svg x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16">
-					<path fill="#666666" d="M15.7,14.1l-3.9-3.9C12.6,9.2,13,7.9,13,6.5C13,2.9,10.1,0,6.5,0S0,2.9,0,6.5S2.9,13,6.5,13 c1.4,0,2.7-0.4,3.7-1.2l3.9,3.9c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3C16.1,15.2,16.1,14.5,15.7,14.1z M1.6,6.5 c0-2.7,2.2-4.9,4.9-4.9c2.7,0,4.9,2.2,4.9,4.9c0,2.7-2.2,4.9-4.9,4.9C3.8,11.4,1.6,9.2,1.6,6.5z"/>
+					<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#search-icon" />
 				</svg>
 			</div>
 
 			<div class="logo">
-				<svg x="0px" y="0px" viewBox="0 0 72 16" enable-background="new 0 0 72 16">
-					<path fill="#666666" d="M13.1,3.8c0.5,0.7,0.6,2.2,0.6,3.1c0,2,0,3.2,0,4.2c0,3.6,0,3.5,1.3,3.9c0.3,0.1,0.7,0.1,0.7,0.3 s-0.2,0.2-0.6,0.2c-0.3,0-2-0.1-2.8-0.1c-0.8,0-2.6,0.1-3,0.1c-0.5,0-0.7,0-0.7-0.2c0-0.3,0.6-0.2,1.1-0.4c0.6-0.2,1-0.3,1.1-1.1 C11,13,11,12,11,9.7c0-2.7,0-4.3-0.6-5C9.7,4,9,3.8,8,3.8c-1.1,0-2.1,0.8-2.4,1.4C5,6.1,5,7.9,5,9.7c0,2.4,0,3.5,0.2,4.3 c0.1,0.5,0.5,0.7,0.9,0.9C6.4,15,7,15,7,15.3c0,0.2-0.4,0.2-0.7,0.2S4,15.4,3.5,15.4s-2.7,0.1-3,0.1c-0.4,0-0.5,0-0.5-0.2 C0,15,0.5,15,1,14.9c0.6-0.2,1-0.3,1.1-0.9c0.1-0.9,0.1-2.6,0.1-5.2c0-1.8,0-3-0.3-3.3C1.8,5.2,1.5,5.1,1.1,5C0.7,5,0.4,5,0.4,4.8 c0-0.2,0.1-0.2,0.2-0.2c1.3-0.4,2.4-1.3,3.6-2.3C4.4,2.2,4.5,2,4.7,2C4.9,2,5,2.3,5,2.7v1.4c0,0.2,0.1,0.4,0.2,0.4 c0.5,0,1.7-2.3,4.5-2.3C11.4,2.2,12.4,2.8,13.1,3.8z"/>
-					<path fill="#666666" d="M22.5,13.8c-0.7,1-2,2.1-3.8,2.1c-1.8,0-2.5-1.4-2.5-2.4c0-2.2,2.2-3.2,3.9-4.1c2.7-1.4,2.8-1,2.8-3.9 c0-0.9,0.1-1.5-0.2-1.9c-0.4-0.7-0.9-0.9-1.7-0.9c-1.9,0-2.6,1.8-3,3.2c-0.2,0.6-1,0.9-1.5,0.9c-0.3,0-0.7-0.2-0.7-0.7 c0-1.3,2.1-4.1,5.8-4.1c1.8,0,3.8,0.3,3.8,2.6c0,1.8-0.2,6.8-0.2,7.7c0,0.9,0.2,1.8,1.1,1.8c0.9,0,1.4-0.8,1.7-0.8 c0.1,0,0.2,0.1,0.2,0.2c0,0.5-1.1,2.2-3,2.2c-1.3,0-2.1-0.9-2.4-1.8C22.7,13.8,22.6,13.7,22.5,13.8C22.5,13.7,22.5,13.7,22.5,13.8z M22.2,9.1c-0.4,0-3.6,1.5-3.6,3.7c0,1.2,0.9,1.7,1.7,1.7c0.7,0,1.3-0.4,1.8-1.1c0.6-0.8,0.6-2.2,0.6-3.7 C22.7,9.2,22.6,9.1,22.2,9.1z"/>
-					<path fill="#666666" d="M32.3,0.2c0,0.6-0.1,1.5-0.1,2c0,0.3,0.1,0.5,0.3,0.5L39,2.5c0.6,0,0.7,0.1,0.7,0.7c0,1.3-0.1,2.4-0.1,8.3 c0,1.5,0.7,2.4,2.7,2.4c1.1,0,2.3-0.5,2.7-1.4c0.3-0.6,0.3-2.4,0.3-3.9c0-3.2,0-4.7-0.3-5c-0.3-0.3-0.7-0.3-1.3-0.4 c-0.6-0.1-0.9-0.1-0.9-0.3c0-0.2,0.1-0.3,0.5-0.3l4.3-0.1c0.5,0,0.6,0.2,0.6,0.6c0,1.1-0.2,4.7-0.2,7.5c0,1.7,0,3,0.2,3.3 c0.2,0.3,0.5,0.3,1.1,0.3c0.2,0,0.7-0.1,0.8-0.1c0.1,0,0.2,0.1,0.2,0.2s-0.2,0.2-0.5,0.3c-0.6,0.1-2.8,0.7-3.9,1.1 c-0.2,0.1-0.5,0.2-0.5,0.2c-0.2,0-0.3-0.2-0.3-0.5c0-0.5,0.1-0.8,0.1-1.4c0-0.2-0.1-0.5-0.2-0.5c-0.3,0-1.9,2.2-4.5,2.2 c-1.5,0-3.7-0.9-3.7-3.9c0-1.7,0.1-6.5,0.1-7.2c0-1.2-0.1-1.2-2.4-1.2c-0.8,0-1.4,0-1.9,0.1c-0.4,0-0.5,0.1-0.5,0.7 C32.1,5.5,32,7.1,32,10.6c0,1.5,0,2.3,0.3,3c0.3,0.5,0.7,0.7,1.5,0.7c1,0,2-0.5,2.2-0.5c0.1,0,0.2,0.1,0.2,0.2c0,0.3-2,2-4.1,2 c-2.3,0-2.8-1.7-2.8-4c0-1.1,0.2-6.6,0.2-7s0-0.8-0.6-0.8h-0.9c-0.1,0-0.2-0.1-0.2-0.2c0-0.3,0.2-0.3,0.7-0.6c1-0.7,2.5-1.9,3.2-3 C31.8,0.2,31.8,0,32,0C32.3,0,32.3,0,32.3,0.2z"/>
-					<path fill="#666666" d="M51,5c-0.2,0-0.3-0.1-0.3-0.2c0-0.2,0.2-0.2,0.6-0.4c0.5-0.2,2.2-1.1,3-1.9C54.6,2,54.8,2,54.9,2 c0.2,0,0.3,0.1,0.3,0.5V4c0,0.3,0.1,0.3,0.2,0.3c0.4,0,1.5-2.3,3.5-2.3c1.1,0,1.9,0.8,1.9,1.8S60,5.6,59.1,5.6 c-1.1,0-1.4-1.2-2.4-1.2c-0.5,0-0.7,0.4-0.9,0.6c-0.5,0.6-0.6,2.3-0.6,4.7c0,2.3-0.1,4.1,0.2,4.6c0.3,0.5,1.7,0.7,2,0.8 c0.3,0.1,0.6,0.1,0.6,0.3c0,0.2-0.4,0.2-0.6,0.2c-0.2,0-2.5-0.1-3.4-0.1c-1,0-3,0.1-3.2,0.1c-0.2,0-0.6,0-0.6-0.2 c0-0.2,0.3-0.3,0.7-0.3c0.2-0.1,1.2-0.2,1.4-0.8c0.2-0.5,0.2-1.7,0.2-5.2C52.5,5.4,52.4,5.1,51,5z"/>
-					<path fill="#666666" d="M70.6,7.1c-1.8,0-4.1-0.2-6.8-0.2c-0.7,0-1,0-1,1.3c0,3.1,1.4,5.8,4.8,5.8c2.6,0,3.8-1.8,3.9-1.8 c0.2,0,0.2,0.1,0.2,0.2c0,0.5-2.4,3.5-5.7,3.5c-3.5,0-6.3-2.6-6.3-6.7C59.9,5,63.1,2,66.9,2c2.8,0,5,2.1,5,4.3 C71.8,7.1,71.4,7.1,70.6,7.1z M66.7,2.6c-2.3,0-3.5,2-3.5,3.1c0,0.4,0.4,0.5,1.9,0.5c1.7,0,4-0.1,4-1.7C69.1,3.9,68.5,2.6,66.7,2.6z "/>
+				<svg x="0px" y="0px" viewBox="0 0 72 16">
+					<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#nature-logo" />
 				</svg>
 			</div>
 
 			<div class="dots-icon">
 				<svg x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16">
-					<circle fill="#666666" cx="1.9" cy="7.7" r="1.9"/>
-					<circle fill="#666666" cx="8" cy="7.7" r="1.9"/>
-					<circle fill="#666666" cx="14.1" cy="7.7" r="1.9"/>
-					<!-- <path fill="#666666" d="M15,9H1C0.4,9,0,8.6,0,8s0.4-1,1-1h14c0.6,0,1,0.4,1,1S15.6,9,15,9z"/> -->
-					<!-- <path fill="#666666" d="M15,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h14c0.6,0,1,0.4,1,1S15.6,4,15,4z"/> -->
-					<!-- <path fill="#666666" d="M15,14H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S15.6,14,15,14z"/> -->
+					<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#dots-icon" />
 				</svg>
 			</div>
 
 
-			<div class="hidden-sm hidden-xs">
-				<p class="text-right">
+			<div class="header-social-icons">
 					<svg width="30px" height="30px" viewBox="0 0 30 30">
 						<circle fill="#B3B3B3" cx="15" cy="15" r="15"/>
 						<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#facebook-icon" />
@@ -61,16 +58,13 @@
 						<circle fill="#B3B3B3" cx="15" cy="15" r="15"/>
 						<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#email-icon" />
 					</svg>
-				</p>
 			</div>
-
 		</div>
-
 	</div>
 
-	<div class="row main-nav hidden-sm hidden-xs">
-
-		<div class="col-md-9">
+	<!-- navigation -->
+	<div class="row main-nav">
+		<nav class="col-md-9">
 			<ul class="list-inline">
 				<li role="presentation"><a href="#">Latest</a></li>
 				<li role="presentation"><a href="#">Most read</a></li>
@@ -88,186 +82,669 @@
 				<li role="presentation"><a href="#">Graphene</a></li>
 				<li role="presentation"><a href="#">Climate</a></li>
 			</ul>			
-		</div>
-
+		</nav>
 
 		<div class="col-md-3">
 			<div class="search">
-				
+				<svg x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16">
+					<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#search-icon" />
+				</svg>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="row featured-article">
-		<div class="col-md-8">
-			<img src="/shared_resources/images/large-placeholder.jpg" alt="" class="img-responsive">
+	<!-- Featured article -->
+	<section class="row article-container large-article double-border-bottom double-border-top">
+		<div class="col-md-8 col-lg-7">
+			<figure class="featured-img">
+				<img src="/shared_resources/images/rice/rice-1.jpg" alt="" class="img-responsive">
+				<figcaption class="related-drawer" id="related-draw-content">
+					<ul class="list-unstyled">
+						<li>
+							<article>
+								<h4>Letter</h4>
+								<h1>Expression of barley SUSIBA2 transcription factor yields high-starch low-methane rice.</h1>
+								<h3>J. Su,  C. Hu,  X. Yan,  Y. Jin,  Z. Chen + et al.</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic error, recusandae. Obcaecati facilis, recusandae aperiam, impedit earum vero eveniet reprehenderit ex. Ipsa officiis dicta sequi quis nesciunt, voluptate quas tempore.</p>
+								<img src="/shared_resources/images/rice/rice-2.jpg" alt="" class="img-responsive">
+								<p>
+									<a href="">View all figures</a>
+								</p>
+							</article>
+						</li>
+						<li>
+							<article>
+								<h4>News & Views</h4>
+								<h1>Bypassing the methane cycle</h1>
+								<p>A genetically modified rice with more starch in its grains also provides fewer nutrients for methane-producing soil microbes. This dual benefit might help to meet the urgent need for globally sustainable food production.</p>
+								<img src="/shared_resources/images/rice/rice-3.jpg" alt="" class="img-responsive">
+							</article>
+						</li>
+						<li>
+							<article>
+								<h4>News</h4>
+								<h1>Simple cooking methods flush arsenic out of rice</h1>
+								<p>Preparing rice in a coffee machine can halve levels of the naturally occurring substance.</p>
+								<img src="/shared_resources/images/rice/rice-4.jpg" alt="" class="img-responsive">
+							</article>
+						</li>
+					</ul>
+				</figcaption>
+
+				<button id="related-drawer-btn" class="expand-btn invisible-btn">
+					<svg width="30px" height="30px" viewBox="0 0 30 30">
+						<circle cx="15" cy="15" r="15"/>
+						<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#expand-icon" />
+					</svg>
+				</button>
+			</figure>
 		</div>
 	
-		<div class="col-md-4">
-			<h1>French teenager healthy 12 years after ceasing HIV treatment</h1>
-			<p class="lead">Eighteen-year-old joins small group of patients who can control the virus after discontinuing drugs.</p>
-			<ul class="list-unstyled">
-				<li>Date</li>
-			</ul>					
-		</div>
-	</div>
+		<section class="col-md-4 col-lg-5">
+			<h4>Nature | letter</h4>
+			<a href="">
+				<h1>New rice strain reduces methane emissions</h1>
+			</a>
+			<!-- <h3>J. Su,  C. Hu,  X. Yan,  Y. Jin,  Z. Chen + et al.</h3> -->
+<!-- 			<p>Expression of barley SUSIBA2 transcription factor yields high-starch low-methane rice.</p> -->
+			<p><time>20 June 2014</time></p>
+
+			<ul class="list-inline">
+				<li><a class="btn btn-default news-views" href="">News & Views</a></li>
+				<li><a class="btn btn-default news" href="">News</a></li>
+				<li><a class="btn btn-default research" href="">Research</a></li>
+			</ul>
+			
+			<h4 class="type-label">Podcast</h4>
+			<p>A new rice strain promises high starch and low methane emissions. Adam Levy talks to plant researcher Paul Bodelier</p>
+			
+			<img src="/shared_resources/images/audio-video/podcast-player-3.png" alt="" class="img-podcast">	
+
+		</section>
+	</section>
 
 	<div class="row">
-		<div class="col-md-10">
+		<div class="col-md-8">
+			<section class="row article-container med-article double-border-bottom">
+				<div class="col-md-12">
+					<h1>More of the best</h1>
+				</div>
+				<article class="col-md-6">
+					<figure>
+						<img src="/shared_resources/images/the-best/rabbit-1.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<h1>Nanoscale objects built from DNA</h1>
+						<p>Representations of 3D surfaces used in computer graphics used to lower the barriers to applications of DNA nanotechnology</p>
+						<p><time>22 July 2015</time></p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news-views" href="">News & Views</a></li>
+							<li><a class="btn btn-default research" href="">Research</a></li>
+						</ul>
+					</section>
+				</article>
 
-			<div class="row">
-				<div class="col-md-4">
-					<img src="/shared_resources/images/large-placeholder.jpg" alt="" class="img-responsive">
-					<h1>Title</h1>
-					<p class="lead">Stand first</p>
-					<ul>
-						<li>Date</li>
-					</ul>					
+				<article class="col-md-6">
+					<figure>
+						<img src="/shared_resources/images/the-best/skin-1.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<h1>Oil droplets turn cells into tiny lasers</h1>
+						<p>Injecting single cells with spheres of fluorescent dye could open new research and treatment avenues using light.</p>
+						<p><time>27 July 2015</time></p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news" href="">News</a></li>
+							<li><a class="btn btn-default research" href="">Research</a></li>
+						</ul>
+					</section>
+				</article>
+			</section>
+
+			<section class="row article-container small-article double-border-bottom">
+				<div class="col-md-12">
+					<h1>Recommended for you</h1>
 				</div>
 
-				<div class="col-md-4">
-					<img src="/shared_resources/images/large-placeholder.jpg" alt="" class="img-responsive">
-					<h1>Title</h1>
-					<p class="lead">Stand first</p>
-					<ul>
-						<li>Date</li>
-					</ul>					
-				</div>
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/recommended/recommended-1.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href="">
+							<h1>Vibrant Pluto stuns scientists</h1>
+						</a>
+						<p>Mission seeking clues to early Solar System finds a world made anew</p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news" href="">News</a></li>
+							<li><a class="btn btn-default news-views" href="">Video</a></li>
+						</ul>
+					</section>
+				</article>
 
-				<div class="col-md-4">
-					<img src="/shared_resources/images/large-placeholder.jpg" alt="" class="img-responsive">
-					<h1>Title</h1>
-					<p class="lead">Stand first</p>
-					<ul>
-						<li>Date</li>
-					</ul>					
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/recommended/recommended-2.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href="">
+							<h1>The architecture of RNA</h1>
+						</a>
+						<p>Researchers are working out cell's RNA structures — and how important they could be</p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news" href="">News Feature</a></li>
+							<li><a class="btn btn-default news-views" href="">Podcast</a></li>
+						</ul>
+					</section>
+				</article>
+
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/recommended/recommended-3.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href="">
+							<h1>From blackboards to bombs</h1>
+						</a>
+						<p>David Kaiser investigates the legacy of ‘the physicists’ war</p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news" href="">Comment</a></li>
+						</ul>
+					</section>
+				</article>
+
+
+
+			</section>
+
+			<div class="row advert-container double-border-bottom">
+				<div class="col-md-12">
+					<img src="/shared_resources/images/adverts/advert-728x90.jpg" class="img-responsive">
 				</div>
-				
 			</div>
+
+			<section class="row article-container med-article double-border-bottom">
+				<div class="col-md-12">
+					<h1>Video</h1>
+				</div>
+
+				<article class="col-md-12">
+					<figure>
+						<img src="/shared_resources/images/audio-video/video-1.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<h1>How to see around corners</h1>
+						<p>Watch scientists at the MIT Media Lab reconstruct a hidden object using scattered laser light. Future applications may include seeing into dangerous or highly contaminated areas.</p>
+						<p><time>20 July 2015</time></p>
+						<ul class="list-inline">
+							<li><a class="btn btn-default news-views" href="">News & Views</a></li>
+							<li><a class="btn btn-default news-views" href="">Research</a></li>
+							<li><a class="btn btn-default" href="">More videos</a></li>
+						</ul>
+					</section>
+				</article>
+
+			</section>
+
+			<section class="row article-container small-article reuters">
+				<div class="col-md-12">
+					<h1>More from the web</h1>
+				</div>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-1.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>Dinosaurs like T.&nbsp;rex had unique serrated teeth</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-2.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>In Africa’s ‘cradle,’ an old fossil site yields new finds</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-3.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>New crew arrives at space station after two-month delay</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-4.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>Plant ‘milkers’ seek molecules for medicines and make-up</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-5.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>Aiyeeeee! Human screams jolt brain's fear-response center</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+
+				<article class="col-md-4">
+					<figure>
+						<img src="/shared_resources/images/reuters/reuters-6.jpg" alt="" class="img-responsive">
+					</figure>
+					<section>
+						<a href=""><h1>No solace for food-deprived polar bears as sea ice wanes</h1></a>
+						<p>Reuters</p>
+					</section>
+				</article>
+				
+			</section>
 		</div>
 
-		<div class="col-md-2">
-			<h1>Side bar</h1>
+		<section class="col-md-4 sidebar">
+			<h1>The latest</h1>
+
+			<div class="search-filter">
+				<svg x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16">
+					<use xlink:href="/shared_resources/images/icons/svg-symbols.svg#search-icon" />
+				</svg>
+
+				<p>Filter</p>
+
+			</div>
 
 			<ul class="list-unstyled">
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150728/srep12666/images/10.1038-srep12666-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Mechanisms of hypervirulent <em>Clostridium difficile</em> ribotype 027 displacement of endemic strains: an epidemiological model</h1>
+			    			</a>
+						</section>
 					</article>
 				</li>
 
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nnano/journal/vaop/ncurrent/images/10.1038-nnano.2015.159-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Nanotechnology</h4>
+			    			<a href="#">
+			    				<h1>Deterministic photon–emitter coupling in chiral photonic circuits</h1>
+			    			</a>
+						</section>
 					</article>
 				</li>
 
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150728/srep12424/images/10.1038-srep12424-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>[NiFe]-hydrogenase is essential for cyanobacterium <i>Synechocystis</i> sp. PCC 6803 aerobic growth in the dark</h1>
+			    			</a>
+						</section>
 					</article>
 				</li>
 
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article class="sponsored-content">
+						<section>
+							<h4>Sponsored Content</h4>
+		    				<img src="/shared_resources/images/adverts/advert-390x305.jpg" alt="">
+						</section>
 					</article>
 				</li>
 
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150728/srep12461/images/10.1038-srep12461-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Transmembrane protein 106a activates mouse peritoneal macrophages via the MAPK and NF-κB signaling pathways</h1>
+			    			</a>
+						</section>
 					</article>
 				</li>
 
 				<li>
-					<article class="">
-						<a href="#">
-							<div class="">
-								<img src="/shared_resources/images/placeholder.jpg" alt="" class="img-responsive">
-							</div>
-							<div class="">
-								<ul class="list-unstyled">
-									<li class="teaser">Title</li>
-									<li>
-										<time datetime="2013-10-23" >date</time>
-									</li>
-								</ul>
-							</div>
-						</a>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nmeth/journal/vaop/ncurrent/images/10.1038-nmeth.3481-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Methods</h4>
+			    			<a href="#">
+			    				<h1>Ultrafast, temporally stochastic STED nanoscopy of millisecond dynamics</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nchembio/journal/vaop/ncurrent/images/10.1038-nchembio.1865-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Chemical Biology</h4>
+			    			<a href="#">
+			    				<h1>The amylase inhibitor montbretin A reveals a new glycosidase inhibition motif</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150728/srep12567/images/10.1038-srep12567-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Analysis of IS6110 insertion sites provide a glimpse into genome evolution of Mycobacterium tuberculosis</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nphys/journal/vaop/ncurrent/images/10.1038-nphys3412-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Physics</h4>
+			    			<a href="#">
+			    				<h1>The free-energy cost of accurate biochemical oscillations</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/ni/journal/vaop/ncurrent/images/10.1038-ni.3230-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Chemical Biology</h4>
+			    			<a href="#">
+			    				<h1>The amylase inhibitor montbretin A reveals a new glycosidase inhibition motif</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/neuro/journal/vaop/ncurrent/images/10.1038-nn.4071-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Neuroscience</h4>
+			    			<a href="#">
+			    				<h1>Oscillatory dynamics coordinating human frontal networks in support of goal maintenance</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/ngeo/journal/vaop/ncurrent/images/10.1038-ngeo2491-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Geoscience</h4>
+			    			<a href="#">
+			    				<h1>Triggered earthquakes suppressed by an evolving stress shadow from a propagating dyke</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/ni/journal/vaop/ncurrent/images/10.1038-ni.3230-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Immunology</h4>
+			    			<a href="#">
+			    				<h1>The ubiquitin-specific protease USP8 is critical for the development and homeostasis of T cells</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150727/srep12512/images/10.1038-srep12512-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>An in silico platform for predicting, screening and designing of antihypertensive peptides</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nchembio/journal/vaop/ncurrent/images/10.1038-nchembio.1865-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Chemical Biology</h4>
+			    			<a href="#">
+			    				<h1>The amylase inhibitor montbretin A reveals a new glycosidase inhibition motif</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article class="sponsored-content">
+						<section>
+							<h4>Sponsored Content</h4>
+		    				<img src="/shared_resources/images/adverts/advert-728x90.jpg" alt="">
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nclimate/journal/vaop/ncurrent/images/10.1038-nclimate2736-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Climate Change</h4>
+			    			<a href="#">
+			    				<h1>Increasing risk of compound flooding from storm surge and rainfall for major US cities</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nmat/journal/vaop/ncurrent/images/10.1038-nmat4358-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Materials</h4>
+			    			<a href="#">
+			    				<h1>Fluctuation-driven mechanotransduction regulates mitochondrial-network structure and function</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150727/srep12611/images/10.1038-srep12611-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Global-change vulnerability of a key plant resource, the African palms</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nphys/journal/vaop/ncurrent/images/10.1038-nphys3416-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Physics</h4>
+			    			<a href="#">
+			    				<h1>Itinerant density wave instabilities at classical and quantum critical points</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nchembio/journal/vaop/ncurrent/images/10.1038-nchembio.1869-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Chemical Biology</h4>
+			    			<a href="#">
+			    				<h1>Tunable and reversible drug control of protein production via a self-excising degron</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/nnano/journal/vaop/ncurrent/images/10.1038-nnano.2015.156-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Nature Nanotechnology</h4>
+			    			<a href="#">
+			    				<h1>Ballistic Josephson junctions in edge-contacted graphene</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150727/srep12605/images/10.1038-srep12605-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<section>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Isoform-specific interactions of the von Hippel-Lindau tumor suppressor protein</h1>
+			    			</a>
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article>
+						<figure>
+							<a href="#">
+								<img src="http://www.nature.com/srep/2015/150727/srep12215/images/10.1038-srep12215-unlocked.jpg" alt="">
+							</a>
+						</figure>
+						<sectio	n>
+							<h4>Scientific Reports</h4>
+			    			<a href="#">
+			    				<h1>Automated chest-radiography as a triage for Xpert testing in resource-constrained settings: a prospective study of diagnostic accuracy and costs</h1>
+			    			</a>
+						</section>
 					</article>
 				</li>
 			</ul>
-		</div>
+		</section> <!-- sidebar -->
 
 	</div>
-
 </div>
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/shared_resources/scripts/main.js"></script>
+<script src="/shared_resources/scripts/voice.js"></script>
 
 </body>
 </html>

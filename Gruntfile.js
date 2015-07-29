@@ -13,7 +13,8 @@ module.exports = function(grunt){
 			style: 'expanded',
 		},
 		files: {
-		  'shared_resources/css/main.css': 'shared_resources/sass/main.scss'
+		  'shared_resources/css/main.css': 'shared_resources/sass/main.scss',
+		  'shared_resources/css/voice.css': 'shared_resources/sass/voice.scss'
 		}
 	  }
 	},

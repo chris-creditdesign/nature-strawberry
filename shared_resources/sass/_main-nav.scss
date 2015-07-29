@@ -1,0 +1,54 @@
+.main-nav {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	li {
+		width: 20%;
+		text-align: center;
+		// font-family: headBold;
+		font-size: 1.25em;
+		letter-spacing: 0.05em;
+		padding: 2px 0;
+		border-left: 1px solid $rules;
+	}
+
+	li:first-child {
+		border-left: none;
+	}
+
+	ul:nth-child(2) li {
+		border-top: 1px solid $rules;
+	}		
+
+	a {
+		color: #333;
+	}
+
+	.search {
+		height: 60px;
+		background-color: $rules;
+		margin-top: 20px;
+
+		@include desktop {
+			margin-top: 0;
+		}
+
+		svg {
+			width: 20px;
+			margin: 20px;
+		}
+	}
+}

@@ -4,6 +4,6 @@ $(function() {
 
     expandBtn.click(function () {
     	collapse.collapse('toggle');
-    })
+    });
 
 });

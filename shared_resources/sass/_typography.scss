@@ -1,6 +1,6 @@
 // Typography
 body {
-	font-family: body;
+	font-family: newsGothRegular;
 	position: relative;
 }
 
@@ -10,9 +10,20 @@ p {
 }
 
 i, em {
-	font-family: bodyItalic;
+	font-family: newsGothItalic;
 }
 
 b, strong {
-	font-family: bodyBold;
+	font-family: newsGothBold;
+}
+
+h1 {
+	font-family: glosaRegular;
+}
+
+h4 {
+	font-family: knockFourtyNine;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: $light-text;
 }

@@ -1,37 +1,37 @@
 // fonts 
 
 @font-face {
-	font-family: headMain;
+	font-family: glosaRegular;
 	src: url("/shared_resources/fonts/GlosaMath-Roman.otf") format("opentype");
 }
 
 @font-face {
-	font-family: headBold;
+	font-family: glosaBold;
 	src: url("/shared_resources/fonts/GlosaMath-Black.otf") format("opentype");
 }
 
 @font-face {
-	font-family: prose;
+	font-family: glosaItalic;
 	src: url("/shared_resources/fonts/GlosaMath-RomanItalic.otf") format("opentype");
 }
 
 @font-face {
-	font-family: proseBold;
+	font-family: glosaBoldItalic;
 	src: url("/shared_resources/fonts/GlosaMath-BlackItalic.otf") format("opentype");
 }
 
 @font-face {
-	font-family: body;
+	font-family: newsGothRegular;
 	src: url("/shared_resources/fonts/NewsGothicMTOT-Regular.otf") format("opentype");
 }
 
 @font-face {
-	font-family: bodyItalic;
+	font-family: newsGothItalic;
 	src: url("/shared_resources/fonts/NewsGothicMTOT-Italic.otf") format("opentype");
 }
 
 @font-face {
-	font-family: bodyBold;
+	font-family: newsGothBold;
 	src: url("/shared_resources/fonts/NewsGothicMTOT-Bold.otf") format("opentype");
 }
 

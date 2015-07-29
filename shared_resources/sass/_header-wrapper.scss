@@ -1,0 +1,108 @@
+.header-banner-advert {
+	padding: 20px 0 10px;
+
+	img {
+		margin: 0 auto;
+	}
+}
+
+.header-wrapper {
+	position: fixed;
+	top: 0px;
+	margin-top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	z-index: 999;
+
+	display: flex;
+	justify-content: space-between;
+
+	@include tablet {
+		justify-content: center;
+	}
+
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
+	@include tablet {
+		position: relative;
+		box-shadow: none;
+		height: 64px;
+		margin-top: 20px;
+	}
+
+	@include desktop {
+		height: 70px;
+	}
+
+	.print-cover {
+		display: none;
+
+		@include tablet {
+			display: block;
+			position: absolute;
+			left: 15px;
+			
+			img {
+				height: 64px;
+			}
+		}
+
+		@include desktop {
+			img {
+				height: 70px;
+			}
+		}
+	}
+
+	.search-icon {
+		width: 16px;
+		margin-top: 17px;
+
+		@include tablet {
+			display: none;
+		}
+	}
+
+	.logo {
+		width: 80px;
+		margin-top: 14px;
+
+		@include tablet {
+			width: 160px;
+			margin-top: 11px;
+		}
+
+		@include desktop {
+			width: 230px;
+			margin-top: 10px;
+		}
+
+		@include large-desktop {
+			width: 250px;
+			margin-top: 8px;
+		}
+	}
+
+
+	.dots-icon {
+		width: 16px;
+		margin-top: 15px;
+		
+		@include tablet {
+			display: none;
+		}
+	}
+
+	.header-social-icons {
+		margin-top: 16px;
+		
+		display: none;
+		@include tablet {
+			display: block;
+			position: absolute;
+			right: 15px;
+			margin-top: 0;
+		}
+	}
+}
