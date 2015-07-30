@@ -305,6 +305,9 @@ h4 {
   max-width: 80%;
   margin: 0 auto;
 }
+.med-article .img-responsive.advert, .small-article .img-responsive.advert, .sidebar .img-responsive.advert {
+  max-width: 100%;
+}
 .med-article h1, .small-article h1, .sidebar h1 {
   margin-bottom: 25px;
 }

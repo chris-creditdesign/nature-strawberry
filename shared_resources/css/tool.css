@@ -230,6 +230,9 @@ h4 {
   max-width: 80%;
   margin: 0 auto;
 }
+.med-article .img-responsive.advert, .small-article .img-responsive.advert, .sidebar .img-responsive.advert {
+  max-width: 100%;
+}
 .med-article h1, .small-article h1, .sidebar h1 {
   margin-bottom: 25px;
 }
@@ -375,6 +378,13 @@ h4 {
 .top-5-expanded .top-5-list {
   text-align: left;
 }
+@media (min-width: 768px) {
+  .top-5-expanded .top-5-pictured img {
+    float: right;
+    width: 50%;
+    margin: 0 0 10px 10px;
+  }
+}
 .top-5-expanded .top-5-list > li {
   margin-top: 30px;
   padding-top: 20px;
@@ -391,6 +401,9 @@ h4 {
 .top-5-expanded label {
   font-family: newsGothBold;
   font-size: 1.6em;
+}
+.top-5-expanded .list-inline {
+  margin-left: 0;
 }
 .top-5-expanded form input {
   margin-bottom: 10px;
