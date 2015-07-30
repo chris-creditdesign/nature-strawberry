@@ -13,7 +13,7 @@ module.exports = function(grunt){
 			style: 'expanded',
 		},
 		files: {
-		  'shared_resources/css/main.css': 'shared_resources/sass/main.scss',
+		  'shared_resources/css/tool.css': 'shared_resources/sass/tool.scss',
 		  'shared_resources/css/voice.css': 'shared_resources/sass/voice.scss'
 		}
 	  }
@@ -36,7 +36,7 @@ module.exports = function(grunt){
 
 	watch: {
 		css: {
-			files: ['shared_resources/sass/*.scss'],
+			files: ['shared_resources/sass/*.scss','shared_resources/sass/*/*.scss'],
 			tasks: ['buildcss']
 		},
 		js: {
