@@ -263,6 +263,19 @@
 	}
 }
 
+footer {
+	h4 {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: $light-text;
+
+		&:hover {
+			color: $dark-text;
+		}
+	}
+}
 
 
 

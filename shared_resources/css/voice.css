@@ -478,6 +478,16 @@ h4 {
   margin-right: 0px;
 }
 
+footer h4 {
+  margin-bottom: 0;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  color: #333;
+}
+
 .featured-img {
   overflow: hidden;
   position: relative;
