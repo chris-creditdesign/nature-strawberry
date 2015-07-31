@@ -1,6 +1,6 @@
 // top-five-article
 
-.top-5-expanded {
+.top-5-expanded, .top-5-collapse {
 
 	.top-5-header {
 	    margin-top: 70px;
@@ -77,7 +77,22 @@
 			}
 		}
 	}
+}
 
+.top-5-collapse {
+	h1 {
+		font-size: 1.8em;
+		font-family: newsGothRegular;
+	}
 
+	.top-5-list > li {
+		margin-top: 20px;
+		padding-top: 15px;
+	}
+
+	.media-object {
+		width: 64px;
+		margin-top: 7px;
+	}
 }
 

@@ -74,7 +74,7 @@
 	}
 }
 
-.small-article.reuters {
+.small-article.reuters, .small-article.search-default {
 	article h1 {
 		font-family: newsGothBold;
 		font-size: 1.4em;
@@ -162,7 +162,7 @@
 	}
 }
 
-.sidebar {
+.sidebar, .search-results {
 
 	& > h1 {
 		padding-top: 20px;
@@ -239,6 +239,21 @@
 		}
 	}
 
+}
+
+.search-results {
+	display: none;
+	margin-top: 0;
+
+	@include tablet {
+		margin-top: -40px;
+	}
+
+	ul {
+		border-left: none;
+		border-right: none;
+		padding: 0;
+	}
 }
 
 .sponsored-content {

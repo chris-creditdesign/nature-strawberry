@@ -230,6 +230,32 @@ h4 {
   margin: 20px;
 }
 
+.large-search {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .large-search {
+    margin-bottom: 60px;
+  }
+}
+.large-search .form-control {
+  font-size: 2em;
+  height: 2.2em;
+  box-shadow: none;
+  border-color: #ccc;
+  background: url(../images/icons/search-bar.png) no-repeat left top;
+  background-position: 5px 5px;
+  transition: background 0.3s ease;
+}
+.large-search .form-control:focus {
+  border-color: #3fa9f5;
+}
+.large-search .search-text {
+  background: url(../images/icons/search-bar-focus.png) no-repeat left top;
+  background-position: 5px 5px;
+}
+
 .invisible-btn {
   background: none;
   border: none;
@@ -295,7 +321,7 @@ h4 {
   font-size: 2em;
 }
 
-.small-article.reuters article h1 {
+.small-article.reuters article h1, .small-article.search-default article h1 {
   font-family: newsGothBold;
   font-size: 1.4em;
   margin-bottom: 5px;
@@ -364,29 +390,29 @@ h4 {
   padding-top: 20px;
 }
 
-.sidebar > h1 {
+.sidebar > h1, .search-results > h1 {
   padding-top: 20px;
   border-top: 1px solid #333;
 }
 @media (min-width: 992px) {
-  .sidebar > h1 {
+  .sidebar > h1, .search-results > h1 {
     padding-top: 0;
     border-top: none;
   }
 }
-.sidebar article {
+.sidebar article, .search-results article {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
 }
-.sidebar img {
+.sidebar img, .search-results img {
   width: 75px;
   margin-top: 3px;
   margin-right: 10px;
   margin-bottom: 3px;
 }
-.sidebar .search-filter {
+.sidebar .search-filter, .search-results .search-filter {
   height: 30px;
   width: 100% px;
   background-color: #ccc;
@@ -394,14 +420,14 @@ h4 {
   display: -ms-flexbox;
   display: flex;
 }
-.sidebar .search-filter svg {
+.sidebar .search-filter svg, .search-results .search-filter svg {
   width: 15px;
   margin: 5px;
 }
-.sidebar .search-filter p {
+.sidebar .search-filter p, .search-results .search-filter p {
   margin-top: 5px;
 }
-.sidebar ul {
+.sidebar ul, .search-results ul {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -409,27 +435,42 @@ h4 {
   padding-right: 15px;
   padding-top: 0;
 }
-.sidebar ul h4 {
+.sidebar ul h4, .search-results ul h4 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 1em;
 }
-.sidebar ul h1 {
+.sidebar ul h1, .search-results ul h1 {
   font-family: newsGothRegular;
   margin: 0 0 10px 0;
   font-size: 1.1em;
   line-height: 1.4em;
 }
-.sidebar ul a {
+.sidebar ul a, .search-results ul a {
   color: #333;
   cursor: pointer;
 }
-.sidebar li {
+.sidebar li, .search-results li {
   margin-bottom: 10px;
   border-top: 1px solid #ccc;
 }
-.sidebar li:first-child {
+.sidebar li:first-child, .search-results li:first-child {
   border-top: none;
+}
+
+.search-results {
+  display: none;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .search-results {
+    margin-top: -40px;
+  }
+}
+.search-results ul {
+  border-left: none;
+  border-right: none;
+  padding: 0;
 }
 
 .sponsored-content img {

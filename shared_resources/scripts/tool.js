@@ -6,6 +6,4 @@ $(function() {
     // 	collapse.collapse('toggle');
     // });
 
-	console.log("Hello tool");
-
 });

@@ -220,7 +220,7 @@ h4 {
   font-size: 2em;
 }
 
-.small-article.reuters article h1 {
+.small-article.reuters article h1, .small-article.search-default article h1 {
   font-family: newsGothBold;
   font-size: 1.4em;
   margin-bottom: 5px;
@@ -289,29 +289,29 @@ h4 {
   padding-top: 20px;
 }
 
-.sidebar > h1 {
+.sidebar > h1, .search-results > h1 {
   padding-top: 20px;
   border-top: 1px solid #333;
 }
 @media (min-width: 992px) {
-  .sidebar > h1 {
+  .sidebar > h1, .search-results > h1 {
     padding-top: 0;
     border-top: none;
   }
 }
-.sidebar article {
+.sidebar article, .search-results article {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
 }
-.sidebar img {
+.sidebar img, .search-results img {
   width: 75px;
   margin-top: 3px;
   margin-right: 10px;
   margin-bottom: 3px;
 }
-.sidebar .search-filter {
+.sidebar .search-filter, .search-results .search-filter {
   height: 30px;
   width: 100% px;
   background-color: #ccc;
@@ -319,14 +319,14 @@ h4 {
   display: -ms-flexbox;
   display: flex;
 }
-.sidebar .search-filter svg {
+.sidebar .search-filter svg, .search-results .search-filter svg {
   width: 15px;
   margin: 5px;
 }
-.sidebar .search-filter p {
+.sidebar .search-filter p, .search-results .search-filter p {
   margin-top: 5px;
 }
-.sidebar ul {
+.sidebar ul, .search-results ul {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -334,27 +334,42 @@ h4 {
   padding-right: 15px;
   padding-top: 0;
 }
-.sidebar ul h4 {
+.sidebar ul h4, .search-results ul h4 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 1em;
 }
-.sidebar ul h1 {
+.sidebar ul h1, .search-results ul h1 {
   font-family: newsGothRegular;
   margin: 0 0 10px 0;
   font-size: 1.1em;
   line-height: 1.4em;
 }
-.sidebar ul a {
+.sidebar ul a, .search-results ul a {
   color: #333;
   cursor: pointer;
 }
-.sidebar li {
+.sidebar li, .search-results li {
   margin-bottom: 10px;
   border-top: 1px solid #ccc;
 }
-.sidebar li:first-child {
+.sidebar li:first-child, .search-results li:first-child {
   border-top: none;
+}
+
+.search-results {
+  display: none;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .search-results {
+    margin-top: -40px;
+  }
+}
+.search-results ul {
+  border-left: none;
+  border-right: none;
+  padding: 0;
 }
 
 .sponsored-content img {
@@ -362,60 +377,73 @@ h4 {
   margin-right: 0px;
 }
 
-.top-5-expanded .top-5-header {
+.top-5-expanded .top-5-header, .top-5-collapse .top-5-header {
   margin-top: 70px;
 }
 @media (min-width: 768px) {
-  .top-5-expanded .top-5-header {
+  .top-5-expanded .top-5-header, .top-5-collapse .top-5-header {
     margin-top: 15px;
   }
 }
-.top-5-expanded .top-5-header h1 {
+.top-5-expanded .top-5-header h1, .top-5-collapse .top-5-header h1 {
   padding: 15px 0 10px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.top-5-expanded .top-5-list {
+.top-5-expanded .top-5-list, .top-5-collapse .top-5-list {
   text-align: left;
 }
 @media (min-width: 768px) {
-  .top-5-expanded .top-5-pictured img {
+  .top-5-expanded .top-5-pictured img, .top-5-collapse .top-5-pictured img {
     float: right;
     width: 50%;
     margin: 0 0 10px 10px;
   }
 }
-.top-5-expanded .top-5-list > li {
+.top-5-expanded .top-5-list > li, .top-5-collapse .top-5-list > li {
   margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid #ccc;
 }
-.top-5-expanded .top-5-list > li:first-child {
+.top-5-expanded .top-5-list > li:first-child, .top-5-collapse .top-5-list > li:first-child {
   margin-top: 20px;
   padding-top: 0;
   border-top: none;
 }
-.top-5-expanded h1 {
+.top-5-expanded h1, .top-5-collapse h1 {
   margin-top: 10px;
 }
-.top-5-expanded label {
+.top-5-expanded label, .top-5-collapse label {
   font-family: newsGothBold;
   font-size: 1.6em;
 }
-.top-5-expanded .list-inline {
+.top-5-expanded .list-inline, .top-5-collapse .list-inline {
   margin-left: 0;
 }
-.top-5-expanded form input {
+.top-5-expanded form input, .top-5-collapse form input {
   margin-bottom: 10px;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  .top-5-expanded form input {
+  .top-5-expanded form input, .top-5-collapse form input {
     width: 80%;
     margin-bottom: 0;
   }
-  .top-5-expanded form button {
+  .top-5-expanded form button, .top-5-collapse form button {
     width: 19%;
     float: right;
   }
+}
+
+.top-5-collapse h1 {
+  font-size: 1.8em;
+  font-family: newsGothRegular;
+}
+.top-5-collapse .top-5-list > li {
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.top-5-collapse .media-object {
+  width: 64px;
+  margin-top: 7px;
 }
