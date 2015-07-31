@@ -447,3 +447,78 @@ h4 {
   width: 64px;
   margin-top: 7px;
 }
+
+.summary .double-border-top {
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .summary .double-border-top {
+    margin-top: 60px;
+  }
+}
+.summary .pull-left {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .summary .pull-left {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+.summary .timeline ul {
+  padding-left: 6px;
+  list-style: none;
+}
+.summary .timeline li {
+  position: relative;
+  display: block;
+}
+.summary .timeline a {
+  color: #666;
+  position: relative;
+  padding: 0 10px 12px 20px;
+  border-left: 2px solid #999999;
+  display: block;
+}
+.summary .timeline .active a {
+  color: #333;
+  font-family: bodyBold;
+}
+.summary .timeline a:before {
+  display: block;
+  position: absolute;
+  content: ' ';
+  top: 0.4em;
+  left: -0.4em;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #999999;
+}
+.summary .timeline .active a:before {
+  background-color: #333;
+}
+.summary .timeline .timeline-title:hover {
+  text-decoration: underline;
+}
+.summary h2 {
+  font-family: glosaRegular;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+.summary .media-body h4, .summary .timeline h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.summary .thumbnail {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .summary .thumbnail {
+    margin-bottom: 0;
+  }
+}
