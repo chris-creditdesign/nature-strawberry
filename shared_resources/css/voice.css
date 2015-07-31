@@ -27,6 +27,10 @@
   src: url("../fonts/NewsGothicMTOT-Bold.otf") format("opentype");
 }
 @font-face {
+  font-family: newsGothBoldItalic;
+  src: url("../fonts/NewsGothicMTOT-BoldItalic.otf") format("opentype");
+}
+@font-face {
   font-family: knockSixtyNine;
   src: url("../fonts/Knockout-69FullLiteweight.otf") format("opentype");
 }
@@ -48,6 +52,10 @@ i, em {
   font-family: newsGothItalic;
 }
 
+a i, a em {
+  font-family: newsGothBoldItalic;
+}
+
 b, strong {
   font-family: newsGothBold;
 }
@@ -61,13 +69,6 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #666;
-}
-
-.header-banner-advert {
-  padding: 20px 0 10px;
-}
-.header-banner-advert img {
-  margin: 0 auto;
 }
 
 .header-wrapper {
@@ -249,7 +250,7 @@ h4 {
   transition: background 0.3s ease;
 }
 .large-search .form-control:focus {
-  border-color: #3fa9f5;
+  border-color: #0067BE;
 }
 .large-search .search-text {
   background: url(../images/icons/search-bar-focus.png) no-repeat left top;
@@ -261,6 +262,14 @@ h4 {
   border: none;
   outline: none;
   padding: 0;
+}
+
+.header-banner-advert {
+  padding: 15px 0 15px;
+  background-color: #666;
+}
+.header-banner-advert img {
+  margin: 0 auto;
 }
 
 .advert-container {
@@ -461,6 +470,7 @@ h4 {
 .search-results {
   display: none;
   margin-top: 0;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .search-results {
@@ -478,6 +488,9 @@ h4 {
   margin-right: 0px;
 }
 
+footer {
+  margin-bottom: 20px;
+}
 footer h4 {
   margin-bottom: 0;
 }

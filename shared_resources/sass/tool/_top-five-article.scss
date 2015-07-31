@@ -51,6 +51,11 @@
 		margin-top: 10px;
 	}
 
+	p > a {
+		font-family: newsGothBold;
+		color: $link;
+	}
+
 	label {
 		font-family: newsGothBold;
 		font-size: 1.6em;

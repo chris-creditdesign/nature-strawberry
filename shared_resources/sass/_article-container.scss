@@ -1,3 +1,12 @@
+.header-banner-advert {
+	padding: 15px 0 15px;
+	background-color: $light-text;
+
+	img {
+		margin: 0 auto;
+	}
+}
+
 .advert-container {
 	padding-top: 20px;
 
@@ -244,6 +253,7 @@
 .search-results {
 	display: none;
 	margin-top: 0;
+	margin-bottom: 60px;
 
 	@include tablet {
 		margin-top: -40px;
@@ -264,6 +274,8 @@
 }
 
 footer {
+	margin-bottom: 20px;
+
 	h4 {
 		margin-bottom: 0;
 	}
