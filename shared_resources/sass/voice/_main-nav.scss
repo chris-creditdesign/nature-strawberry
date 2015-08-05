@@ -42,6 +42,9 @@
 		background-color: $rules;
 		margin-top: 20px;
 
+		color: #666666;
+		fill: currentColor;
+
 		@include desktop {
 			margin-top: 0;
 		}

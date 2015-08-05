@@ -78,6 +78,8 @@ h4 {
   width: 100%;
   height: 50px;
   background-color: #fff;
+  color: #222222;
+  fill: currentColor;
   z-index: 999;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -89,6 +91,11 @@ h4 {
       -ms-flex-direction: row;
           flex-direction: row;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .header-wrapper {
+    background: none;
+  }
 }
 @media (min-width: 768px) {
   .header-wrapper {
@@ -111,6 +118,8 @@ h4 {
   }
 }
 .header-wrapper .search-icon {
+  color: #666666;
+  fill: currentColor;
   width: 16px;
   margin-top: 17px;
 }
@@ -148,6 +157,8 @@ h4 {
   }
 }
 .header-wrapper .dots-icon {
+  color: #666666;
+  fill: currentColor;
   width: 16px;
   margin-top: 15px;
 }
@@ -160,6 +171,80 @@ h4 {
 @media (min-width: 992px) {
   .header-wrapper .dots-icon {
     margin-top: 27px;
+  }
+}
+
+.hero-article {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .hero-article {
+    height: 500px;
+  }
+}
+.hero-article .hero-headline {
+  margin-top: 50px;
+  height: 400px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .hero-article .hero-headline {
+    margin-top: 0;
+    height: 420px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-article .header-wrapper {
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  .hero-article .search-icon, .hero-article .dots-icon {
+    color: #ffffff;
+  }
+}
+.hero-article a {
+  color: white;
+}
+.hero-article h1 {
+  font-size: 2.2em;
+  margin-top: 15px;
+  font-family: newsGothRegular;
+}
+@media (min-width: 768px) {
+  .hero-article h1 {
+    font-size: 2.6em;
+  }
+}
+.hero-article h4 {
+  padding: 5px 8px;
+  display: inline-block;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.hero-image {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/hero-article/hero-article-image.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    top: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-image {
+    height: 500px;
   }
 }
 
