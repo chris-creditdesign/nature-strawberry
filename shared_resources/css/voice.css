@@ -192,6 +192,10 @@ h4 {
     display: block;
   }
 }
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+}
 .main-nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -204,27 +208,49 @@ h4 {
   margin-left: 0;
 }
 .main-nav li {
-  width: 20%;
+  width: 50%;
   text-align: center;
+  font-family: knockFourtyNine;
+  text-transform: uppercase;
   font-size: 1.25em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   padding: 2px 0;
-  border-left: 1px solid #ccc;
+  border-left: 2px solid #fff;
+  transition: background-color 0.2s ease;
+}
+.main-nav li:hover {
+  cursor: pointer;
+}
+.main-nav .menu-static li {
+  background-color: #ccc;
+}
+.main-nav .menu-static li:hover {
+  background-color: #999999;
+}
+.main-nav .menu-trending li {
+  background-color: #eee;
+}
+.main-nav .menu-trending li:hover {
+  background-color: #bbbbbb;
+}
+.main-nav .menu-trending li:first-child {
+  color: #bf0222;
+}
+.main-nav .menu-trending li:first-child:hover {
+  background-color: #eee;
+  cursor: auto;
 }
 .main-nav li:first-child {
   border-left: none;
 }
 .main-nav ul:nth-child(2) li {
-  border-top: 1px solid #ccc;
-}
-.main-nav a {
-  color: #333;
+  border-top: 2px solid #ffffff;
 }
 .main-nav .search {
   height: 60px;
-  background-color: #ccc;
-  margin-top: 20px;
-  color: #666666;
+  background-color: #eee;
+  margin-top: 2px;
+  color: #666;
   fill: currentColor;
 }
 @media (min-width: 992px) {
