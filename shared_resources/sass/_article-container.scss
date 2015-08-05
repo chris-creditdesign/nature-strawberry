@@ -43,7 +43,7 @@
 
 }
 
-.article-container, .sidebar {
+.article-container {
 	text-align: center;
 }
 
@@ -73,10 +73,6 @@
 	}
 }
 
-.med-article {
-	
-}
-
 .small-article {
 	article h1 {
 		font-size: 2em;
@@ -91,7 +87,7 @@
 	}
 }
 
-.med-article, .small-article, .sidebar {
+.med-article, .small-article {
 	.img-responsive {
 		max-width: 80%;
 		margin: 0 auto;
@@ -136,7 +132,7 @@
 	top: -30px;
 }
 
-.related-drawer, .sidebar {
+.related-drawer {
 
 	ul {
 		text-align: left;
@@ -171,101 +167,6 @@
 	}
 }
 
-.sidebar, .search-results {
-
-	& > h1 {
-		padding-top: 20px;
-		border-top: 1px solid $dark-text;
-
-		@include desktop {
-			padding-top: 0;
-			border-top: none;
-		}
-	}
-
-	article {
-		display: flex;
-		
-		padding-top: 10px;
-	}
-
-	img {
-		width: 75px;
-		margin-top: 3px;
-		margin-right: 10px;
-		margin-bottom: 3px;
-	}
-
-	.search-filter {
-		height: 30px;
-		width: 100%px;
-		background-color: $rules;
-		display: flex;
-
-		svg {
-			width: 15px;
-			margin: 5px;
-		}
-
-		p {
-			margin-top: 5px;
-		}
-	}
-
-	ul {
-		border-left: 1px solid $rules;
-		border-right: 1px solid $rules;
-		border-bottom: 1px solid $rules;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 0;
-	
-		h4 {
-			margin-top: 0;
-			margin-bottom: 5px;
-			font-size: 1em;
-		}
-
-		h1 {
-			font-family: newsGothRegular;
-			margin: 0 0 10px 0;
-			font-size: 1.1em;
-			line-height: 1.4em;
-		}
-
-		a {
-			color: $dark-text;
-			cursor: pointer;
-		}
-	}
-
-	li {
-		margin-bottom: 10px;
-		border-top: 1px solid $rules;
-
-		&:first-child {
-			border-top: none;
-		}
-	}
-
-}
-
-.search-results {
-	display: none;
-	margin-top: 0;
-	margin-bottom: 60px;
-
-	@include tablet {
-		margin-top: -40px;
-	}
-
-	ul {
-		border-left: none;
-		border-right: none;
-		padding: 0;
-	}
-}
-
 .sponsored-content {
 	img {
 		width: 100%;
@@ -273,21 +174,6 @@
 	}
 }
 
-footer {
-	margin-bottom: 20px;
-
-	h4 {
-		margin-bottom: 0;
-	}
-
-	a {
-		color: $light-text;
-
-		&:hover {
-			color: $dark-text;
-		}
-	}
-}
 
 
 

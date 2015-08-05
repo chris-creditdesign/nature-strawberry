@@ -73,30 +73,4 @@ $darken-amount: 20%;
 		border-top: $border-width solid #ffffff;
 	}		
 
-	.search {
-		height: 60px;
-		background-color: $menu;
-		margin-top: $border-width;
-
-		color: $light-text;
-		fill: currentColor;
-
-		@include desktop {
-			margin-top: 0;
-		}
-
-		svg {
-			width: 20px;
-			margin: 20px;
-		}
-	}
 }
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,82 @@
+.sidebar, .search-results {
+
+	& > h1 {
+	
+		margin-bottom: 25px;
+		text-align: center;
+	
+		padding-top: 20px;
+		border-top: 1px solid $dark-text;
+
+		@include desktop {
+			padding-top: 0;
+			border-top: none;
+		}
+	}
+
+	article {
+		display: flex;
+		
+		padding-top: 10px;
+	}
+
+	img {
+		width: 75px;
+		margin-top: 3px;
+		margin-right: 10px;
+		margin-bottom: 3px;
+	}
+
+	ul {
+		border-left: 1px solid $rules;
+		border-right: 1px solid $rules;
+		border-bottom: 1px solid $rules;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0;
+	
+		h4 {
+			margin-top: 0;
+			margin-bottom: 5px;
+			font-size: 1em;
+		}
+
+		h1 {
+			font-family: newsGothRegular;
+			margin: 0 0 10px 0;
+			font-size: 1.1em;
+			line-height: 1.4em;
+		}
+
+		a {
+			color: $dark-text;
+			cursor: pointer;
+		}
+	}
+
+	li {
+		margin-bottom: 10px;
+		border-top: 1px solid $rules;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+}
+
+.search-results {
+	display: none;
+	margin-top: 0;
+	margin-bottom: 60px;
+
+	@include tablet {
+		margin-top: -40px;
+	}
+
+	ul {
+		border-left: none;
+		border-right: none;
+		padding: 0;
+	}
+}

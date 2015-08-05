@@ -1,0 +1,27 @@
+.search {
+	height: 60px;
+	background-color: $menu;
+	margin-top: $border-width;
+
+	color: $light-text;
+	fill: currentColor;
+
+	@include desktop {
+		margin-top: 0;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+		margin: 20px;
+	}
+}
+
+.filter {
+	border-left: 1px solid $rules;
+	border-right: 1px solid $rules;
+	border-top: 1px solid $rules;
+
+	display: flex;
+	justify-content: space-between;
+}

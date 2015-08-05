@@ -6,7 +6,9 @@
 // Header elements
 @import 'voice/header-wrapper';
 @import 'voice/main-nav';
+@import 'voice/search';
 @import 'voice/large-search';
+@import 'voice/sidebar';
 
 .invisible-btn {
 	background: none;
@@ -19,3 +21,4 @@
 // Articles
 @import 'article-container';
 @import 'related-expand';
+@import 'footer';

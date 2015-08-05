@@ -285,7 +285,7 @@ h4 {
   text-transform: none;
 }
 
-.article-container, .sidebar {
+.article-container {
   text-align: center;
 }
 
@@ -320,17 +320,17 @@ h4 {
   margin-bottom: 5px;
 }
 
-.med-article .img-responsive, .small-article .img-responsive, .sidebar .img-responsive {
+.med-article .img-responsive, .small-article .img-responsive {
   max-width: 80%;
   margin: 0 auto;
 }
-.med-article .img-responsive.advert, .small-article .img-responsive.advert, .sidebar .img-responsive.advert {
+.med-article .img-responsive.advert, .small-article .img-responsive.advert {
   max-width: 100%;
 }
-.med-article h1, .small-article h1, .sidebar h1 {
+.med-article h1, .small-article h1 {
   margin-bottom: 25px;
 }
-.med-article article h1, .small-article article h1, .sidebar article h1 {
+.med-article article h1, .small-article article h1 {
   margin-bottom: 10px;
 }
 
@@ -358,15 +358,15 @@ h4 {
   top: -30px;
 }
 
-.related-drawer ul, .sidebar ul {
+.related-drawer ul {
   text-align: left;
 }
-.related-drawer ul h1, .sidebar ul h1 {
+.related-drawer ul h1 {
   font-family: newsGothBold;
   font-size: 1.6em;
   line-height: 1.2em;
 }
-.related-drawer ul h3, .sidebar ul h3 {
+.related-drawer ul h3 {
   font-size: 1em;
 }
 
@@ -383,106 +383,9 @@ h4 {
   padding-top: 20px;
 }
 
-.sidebar > h1, .search-results > h1 {
-  padding-top: 20px;
-  border-top: 1px solid #333;
-}
-@media (min-width: 992px) {
-  .sidebar > h1, .search-results > h1 {
-    padding-top: 0;
-    border-top: none;
-  }
-}
-.sidebar article, .search-results article {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 10px;
-}
-.sidebar img, .search-results img {
-  width: 75px;
-  margin-top: 3px;
-  margin-right: 10px;
-  margin-bottom: 3px;
-}
-.sidebar .search-filter, .search-results .search-filter {
-  height: 30px;
-  width: 100% px;
-  background-color: #ccc;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.sidebar .search-filter svg, .search-results .search-filter svg {
-  width: 15px;
-  margin: 5px;
-}
-.sidebar .search-filter p, .search-results .search-filter p {
-  margin-top: 5px;
-}
-.sidebar ul, .search-results ul {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0;
-}
-.sidebar ul h4, .search-results ul h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 1em;
-}
-.sidebar ul h1, .search-results ul h1 {
-  font-family: newsGothRegular;
-  margin: 0 0 10px 0;
-  font-size: 1.1em;
-  line-height: 1.4em;
-}
-.sidebar ul a, .search-results ul a {
-  color: #333;
-  cursor: pointer;
-}
-.sidebar li, .search-results li {
-  margin-bottom: 10px;
-  border-top: 1px solid #ccc;
-}
-.sidebar li:first-child, .search-results li:first-child {
-  border-top: none;
-}
-
-.search-results {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 60px;
-}
-@media (min-width: 768px) {
-  .search-results {
-    margin-top: -40px;
-  }
-}
-.search-results ul {
-  border-left: none;
-  border-right: none;
-  padding: 0;
-}
-
 .sponsored-content img {
   width: 100%;
   margin-right: 0px;
-}
-
-footer {
-  margin-bottom: 20px;
-}
-footer h4 {
-  margin-bottom: 0;
-}
-footer a {
-  color: #666;
-}
-footer a:hover {
-  color: #333;
 }
 
 .top-5-expanded .top-5-header, .top-5-collapse .top-5-header {
@@ -633,4 +536,17 @@ footer a:hover {
   .summary .thumbnail {
     margin-bottom: 0;
   }
+}
+
+footer {
+  margin-bottom: 20px;
+}
+footer h4 {
+  margin-bottom: 0;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  color: #333;
 }
