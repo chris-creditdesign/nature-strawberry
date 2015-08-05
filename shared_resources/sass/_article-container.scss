@@ -147,40 +147,7 @@
 	top: -30px;
 }
 
-.related-drawer {
 
-	ul {
-		text-align: left;
-
-		h1 {
-			font-family: newsGothBold;
-			font-size: 1.6em;
-			line-height: 1.2em;
-		}
-
-		h3 {
-			font-size: 1em;
-		}
-	}
-
-}
-
-.related-drawer {
-	article {
-		margin-bottom: 30px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid $dark-text;
-
-		&:last-child {
-			margin-bottom: 0;
-			border-bottom: none;
-		}
-
-		&:first-child {
-			padding-top: 20px;
-		}
-	}
-}
 
 .sponsored-content {
 	img {
