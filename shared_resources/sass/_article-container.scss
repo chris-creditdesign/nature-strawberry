@@ -49,7 +49,12 @@
 
 .large-article {
 	h1 {
-		font-size: 2.8em;
+
+		font-size: 2.4em;
+
+		@include phone {
+			font-size: 2.8em;
+		}
 
 		@include large-desktop {
 			font-size: 3.4em;
@@ -70,6 +75,16 @@
 	
 	ul {
 		margin-bottom: 20px;
+	}
+}
+
+.med-article {
+	article h1 {
+		font-size: 2em;
+
+		@include phone {
+			font-size: 2.5em;
+		}
 	}
 }
 
