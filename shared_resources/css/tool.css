@@ -396,13 +396,12 @@ h4 {
 .double-border-bottom:after, .double-border-top:before {
   position: relative;
   top: 30px;
-  width: 100%;
+  left: 15px;
+  width: calc(100% - 30px);
   height: 10px;
   background-color: #fff;
   border-bottom: 1px solid #333;
   border-top: 1px solid #333;
-  border-left: 30px solid #fff;
-  border-right: 30px solid #fff;
 }
 
 .double-border-top:before {
