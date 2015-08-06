@@ -472,6 +472,11 @@ h4 {
 .top-5-expanded form input, .top-5-collapse form input {
   margin-bottom: 10px;
   display: inline-block;
+  box-shadow: none;
+}
+.top-5-expanded form input:focus, .top-5-collapse form input:focus {
+  box-shadow: none;
+  border-color: #999999;
 }
 @media (min-width: 768px) {
   .top-5-expanded form input, .top-5-collapse form input {

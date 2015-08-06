@@ -78,6 +78,12 @@
 		input {
 			margin-bottom: 10px; 
 			display: inline-block;
+			box-shadow: none;
+		}
+
+		input:focus {
+			box-shadow: none;
+			border-color: $volume-arrow;
 		}
 
 		@include tablet {
