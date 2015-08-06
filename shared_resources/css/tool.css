@@ -202,7 +202,33 @@ h4 {
 @media (min-width: 768px) {
   .hero-article .hero-headline {
     margin-top: 0;
+    height: 426px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-article .hero-headline {
     height: 420px;
+  }
+}
+.hero-article .hero-headline-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -25px 15px 15px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .hero-article .hero-headline-text {
+    box-shadow: 0px -5px 20px 15px rgba(0, 0, 0, 0.5);
+  }
+  .hero-article .hero-headline-text:after {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -20px;
+    left: -40px;
+    background-color: #ffffff;
+    content: " ";
+    border-right: 40px solid #ffffff;
+    border-left: 40px solid #ffffff;
+    box-sizing: content-box;
   }
 }
 @media (min-width: 768px) {
