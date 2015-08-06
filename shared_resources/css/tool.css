@@ -371,6 +371,17 @@ h4 {
   margin-bottom: 5px;
 }
 
+.med-article article, .small-article article {
+  padding-top: 20px;
+}
+@media (min-width: 992px) {
+  .med-article article, .small-article article {
+    padding-top: 0px;
+  }
+}
+.med-article article:first-of-type, .small-article article:first-of-type {
+  padding-top: 0px;
+}
 .med-article .img-responsive, .small-article .img-responsive {
   max-width: 80%;
   margin: 0 auto;
