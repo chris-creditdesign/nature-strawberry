@@ -38,13 +38,14 @@
 	}
 
 	.top-5-list > li:first-child {
-		margin-top: 20px;
+		margin-top: 0px;
+
+		@include desktop {
+			margin-top: 20px;
+		}
+
 		padding-top: 0;
 		border-top: none;
-
-	// 	h4 {
-	// 		margin-top: 0;
-	// 	}
 	}
 
 	h1 {
@@ -67,7 +68,7 @@
 
 	form {
 		input {
-			margin-bottom: 10px;
+			margin-bottom: 10px; 
 			display: inline-block;
 		}
 
@@ -84,6 +85,49 @@
 	}
 }
 
+.collapse-list {
+	margin-bottom: 8px;
+}
+
+.tool-social-icons li {
+	fill: $volume-arrow;
+	transition: fill 0.2s ease;
+
+	&:hover {
+		fill: $dark-text;
+	}
+
+	&.tool-facebook-icon:hover {
+		fill: #37589A;
+	}
+
+	&.tool-twitter-icon:hover {
+		fill: #39A9E0;
+	}
+}
+
+.tool-social-vertical {
+	li {
+		display: inline-block;
+	}
+	
+
+	@include desktop {
+		text-align: right;
+		margin-top: 20px;
+
+		li {
+			display: list-item;
+		}
+
+		&.tool-social-summary {
+			margin-top: 40px;
+		}
+		
+	}
+
+}
+
 .top-5-collapse {
 	h1 {
 		font-size: 1.8em;
@@ -91,7 +135,7 @@
 	}
 
 	.top-5-list > li {
-		margin-top: 20px;
+		margin-top: 10px;
 		padding-top: 15px;
 	}
 

@@ -71,6 +71,13 @@ h4 {
   color: #666;
 }
 
+.invisible-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
 .header-wrapper {
   position: fixed;
   top: 0px;
@@ -204,6 +211,7 @@ h4 {
   letter-spacing: 0.1em;
   padding: 7px 0 4px 20px;
   border-left: 2px solid #fff;
+  color: #333;
 }
 .main-nav li:hover {
   cursor: pointer;
@@ -398,13 +406,6 @@ h4 {
 .search-results ul {
   border-left: none;
   border-right: none;
-  padding: 0;
-}
-
-.invisible-btn {
-  background: none;
-  border: none;
-  outline: none;
   padding: 0;
 }
 
