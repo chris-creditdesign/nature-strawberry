@@ -166,10 +166,17 @@ h4 {
 
 .hero-article {
   height: 400px;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .hero-article {
     height: 500px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-article {
+    margin-bottom: 0;
   }
 }
 .hero-article .hero-headline {
@@ -204,8 +211,8 @@ h4 {
   .hero-article .hero-headline-text:after {
     position: absolute;
     width: 100%;
-    height: 20px;
-    bottom: -20px;
+    height: 30px;
+    bottom: -30px;
     left: -40px;
     background-color: #ffffff;
     content: " ";
@@ -504,6 +511,9 @@ h4 {
   fill: #39A9E0;
 }
 
+.tool-social-vertical {
+  margin-bottom: 0px;
+}
 .tool-social-vertical li {
   display: inline-block;
 }
@@ -546,6 +556,9 @@ h4 {
   .top-5-expanded .tool-social-icons {
     text-align: right;
   }
+}
+.top-5-expanded .tool-social-vertical {
+  margin-bottom: 0px;
 }
 .top-5-expanded .tool-social-vertical li {
   margin-bottom: 0px;

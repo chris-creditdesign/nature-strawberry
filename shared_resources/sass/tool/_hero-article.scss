@@ -4,9 +4,17 @@ $tablet-hero-height: 500px;
 //hero-article
 .hero-article {
 	height: $mobile-hero-height;
+	margin-bottom: 60px;
+
 	@include tablet {
 		height: $tablet-hero-height;
+		margin-bottom: 10px;
 	}
+
+	@include desktop {
+		margin-bottom: 0;
+	}
+
 
 	.hero-headline {
 		margin-top: 50px;
@@ -35,8 +43,8 @@ $tablet-hero-height: 500px;
 			&:after {
 				position: absolute;
 				width: 100%;
-				height: 20px;
-				bottom: -20px;
+				height: 30px;
+				bottom: -30px;
 				left: -40px;
 				background-color: #ffffff;
 				content: " ";
