@@ -1,0 +1,72 @@
+// Styles for responsive ai2html graphics
+
+.ai2html {
+	margin: 20px 0;
+	padding: 0;
+
+	.g-artboard {
+		margin:0;
+		padding: 0;
+		position: relative;
+
+		.g-description {
+			padding: 0;
+		}
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.g-header, .g-description, .g-footnote {
+		padding: 10px 20px;
+	}
+
+	.g-footnote {
+		text-align: right;
+		font-size: 0.8em;
+	}
+
+	dl {
+		margin-bottom: 0px;
+	}
+
+	dt {
+		font-family: bodyBold;
+	}
+
+	dd {
+		margin-bottom: 10px;
+	}
+
+	dd p, dt p {
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+
+	.dl-horizontal {
+
+		dt {
+			width: 22px;
+			text-align: left;
+			float: left;
+			clear: both;
+		}
+
+		dd {
+			margin-left: 22px;
+			margin-bottom: 2px;
+		}
+	}
+
+	.g-aiImg{
+		display:block;
+		width:100% !important;
+		max-width: 100%;
+	}
+
+}

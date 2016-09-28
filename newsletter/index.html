@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature newsletter design</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../shared_resources/css/newsletter.css">
+
+	<!-- Styles for Graphic of the day -->
+	<style type='text/css'>
+		#feature-b-1-graphic .g-header, 
+		#feature-b-1-graphic .g-pointers {
+			color: #ffffff;
+		}
+
+		#feature-b-1-graphic h1 {
+			font-family: knockFourtyNine;
+			font-size:2.4em;
+			line-height: 0.9em;
+			padding-bottom:8px;
+			letter-spacing:0.02em;
+			margin-top: 10px;
+			text-transform: uppercase;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dt,
+		#feature-b-1-graphic .g-artboard figcaption dd {
+			position: absolute;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dd {
+			display: none;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dt.g-pointer {
+			height: 10%;
+			width: 10%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+
+		#feature-b-1-graphic .g-pointer-1 {
+			top:5%;
+			left:32%;
+		}
+
+		#feature-b-1-graphic .g-pointer-2 {
+			top:5%;
+			left:53%;
+		}
+
+		#feature-b-1-graphic .g-pointer-3 {
+			top:10%;
+			left:70%;
+		}
+
+		#feature-b-1-graphic .g-pointer-4 {
+			top:55%;
+			left:32%;
+		}
+
+		/*change artboards*/
+		@media screen and (min-width: 768px) {
+			#feature-b-1-graphic .g-artboard figcaption dt.g-pointer {
+				display: none;
+			}
+
+			#feature-b-1-graphic .g-description.g-pointers {
+				display: none;
+			}
+
+			#feature-b-1-graphic .g-artboard figcaption dd.g-pointer {
+				height: 5%;
+				width: 25%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+			}
+
+			#feature-b-1-graphic .g-pointer-1 {
+				top:6%;
+				left:10%;
+			}
+
+			#feature-b-1-graphic .g-pointer-2 {
+				top:6%;
+				left:45%;
+			}
+
+			#feature-b-1-graphic .g-pointer-3 {
+				top:10%;
+				left:73%;
+			}
+
+			#feature-b-1-graphic .g-pointer-4 {
+				top:61%;
+				left:18%;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			#feature-b-1-graphic .g-pointer-1 {
+				top:8%;
+			}
+		}
+	</style>
+
+</head>
+<body data-grid-framework="b3" data-grid-color="red" data-grid-opacity="0.2" data-grid-zindex="100" data-grid-gutterwidth="30px" data-grid-nbcols="12" data-spy="scroll" data-target="#fast-scroll-toc">
+<!-- http://alefeuvre.github.io/foundation-grid-displayer/ -->
+
+
+<div class="container hero-article">
+	<div class="hero-image">
+		
+	</div>
+
+	<!-- header -->
+	<div class="row">
+		<div class="col-sm-12 col-xs-12 header-wrapper">
+
+			<div class="logo">
+				<svg x="0px" y="0px" viewBox="0 0 182 30">
+					<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#naturebriefing-logo" />
+				</svg>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row hero-headline">
+		<div class="col-md-8 col-md-offset-2 hero-headline-text">
+			<div>
+				<h4>CRISPR</h4>
+				<h1><a href="#">Chinese scientists genetically modify human embryos</a></h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="container tool">
+
+
+	<!-- The top five -->
+	<section class="row article-container top-5-collapse double-border-bottom">
+
+		<div class="col-md-8 col-md-offset-2">
+
+			<ul class="list-unstyled top-5-list">
+				<li>
+					<article class="media">
+							
+						<section class="media-body">
+						
+							<div class="top-5-pictured">
+								<p><strong>Hello Jane</strong></p>
+
+								<p>Today in a world first, <a href="#">Chinese scientists have reported editing the genomes of human embryos</a>. The results are published in the online journal <em>Protein & Cell</em> and confirm widespread rumours that such experiments had been conducted — rumours that <a href="#">sparked a high-profile debate</a> last month about the ethical implications of such work.</p>
+
+							</div>
+
+						</section>
+
+					</article>
+				</li>
+
+				<li>
+					<article class="media">
+						
+						<section class="media-body">
+							<div>
+								<p>A genomic analysis of more than 5,000 Chinese women with recurrent major depressive disorder (MDD) has identified and replicated <a href="#">two genome-wide significant loci contributing to risk of MDD</a> on chromosome 10. One is near the sirtuin1 (<em>SIRT1</em>) gene, and the other is in an intron of the phospholysine phosphohistidine inorganic pyrophosphate phosphatase (<em>LHPP</em>) gene. The association close to <a href="#"><em>SIRT1</em> may implicate abnormalities in mitochondria</a> as risk factors for the disease.</p>
+
+							</div>
+	
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article class="media">
+						<section class="media-body">
+		
+							<div>
+								<p>Compared to nonmusicians, young children who strum a guitar or blow a trombone become better readers with better vocabularies. A new study shows that the benefits extend to teenagers as well. Neuroscientists compared two groups of high school students over 3 years: One began learning their first instrument in band class, whereas the other focused on physical fitness in Junior Reserve Officers’ Training Corps (JROTC). At the end of 3 years, those <a href="#">students who had played instruments were better at detecting speech sounds</a>, like syllables and words that rhyme, than their JROTC peers, the team reports online today in the <em>Proceedings of the National Academy of Sciences</em>. Researchers know that as children grow up, their ability to soak up new information, especially language, starts to diminish. These findings suggest that musical training could keep that window open longer. But the benefits of music aren’t just for musicians; taking up piano could be the difference between an A and a B in Spanish class.</p>
+
+								<ul class="list-inline tool-social-icons">
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-playlist-icon" />
+											</svg>
+										</button>
+									</li>
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-bookmark-icon" />
+											</svg>
+										</button>
+									</li>
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-email-icon" />
+											</svg>
+										</button>
+									</li>
+									<li class="tool-facebook-icon">
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-facebook-icon" />
+											</svg>
+										</button>
+									</li>
+									<li class="tool-twitter-icon">
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-twitter-icon" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+					</article>
+				</li>
+				<li>
+					<form>
+						<label for="exampleInputEmail1">Get the latest research delivered to your inbox</label>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email">
+							<button type="submit" class="btn btn-default">Sign up</button>
+						</div>
+					</form>
+
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<div class="row advert-container double-border-bottom">
+		<div class="col-md-12">
+			<img src="../shared_resources/images/adverts/advert-728x90.jpg" class="img-responsive advert">
+		</div>
+	</div>
+
+	<!-- More of the best -->
+	<section class="row article-container small-article double-border-bottom">
+		<div class="col-md-12">
+			<h1>News and Comment of the day</h1>
+		</div>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/the-best/rabbit-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>Nanoscale objects built from DNA</h1>
+				<p>Representations of 3D surfaces used in computer graphics used to lower the barriers to applications of DNA nanotechnology</p>
+				<ul class="list-inline">
+					<li><a class="btn btn-default news-views" href="#">News & Views</a></li>
+					<li><a class="btn btn-default research" href="#">Research</a></li>
+				</ul>
+			</section>
+		</article>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/the-best/skin-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>Oil droplets turn cells into tiny lasers</h1>
+				<p>Injecting single cells with spheres of fluorescent dye could open new research and treatment avenues using light.</p>
+				<ul class="list-inline">
+					<li><a class="btn btn-default news" href="#">News</a></li>
+					<li><a class="btn btn-default research" href="#">Research</a></li>
+				</ul>
+			</section>
+		</article>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/the-best/neanderthal-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>Neanderthals had outsize effect on human biology</h1>
+				<p>From skin disorders to the immune system, sex with archaic species changed <em>Homo sapiens</em></p>
+				<ul class="list-inline">
+					<li><a class="btn btn-default news" href="#">News</a></li>
+					<li><a class="btn btn-default news" href="#">Feature</a></li>
+					<li><a class="btn btn-default research" href="#">Research</a></li>
+				</ul>
+			</section>
+		</article>
+	</section>
+
+	<section class="row article-container small-article double-border-bottom">
+		<div class="col-md-12">
+			<h1>Recommended for you</h1>
+		</div>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/recommended/recommended-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">Vibrant Pluto stuns scientists</a>
+				</h1>
+				<p>Mission seeking clues to early Solar System finds a world made anew</p>
+				<ul class="list-inline">
+					<li><a class="btn btn-default news" href="#">News</a></li>
+					<li><a class="btn btn-default news-views" href="#">Video</a></li>
+				</ul>
+			</section>
+		</article>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/recommended/recommended-2.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">The architecture of RNA</a>
+				</h1>
+				<p>Researchers are working out cell's RNA structures — and how important they could be</p>
+				<ul class="list-inline">
+					<li><a class="btn btn-default news" href="#">News Feature</a></li>
+					<li><a class="btn btn-default news-views" href="#">Podcast</a></li>
+				</ul>
+			</section>
+		</article>
+
+		<div class="col-md-4">
+			<img src="../shared_resources/images/adverts/advert-390x305.jpg" class="img-responsive advert">
+		</div>
+
+
+
+	</section>
+
+	<section class="row article-container small-article reuters">
+		<div class="col-md-12">
+			<h1>Research Highlights of the day</h1>
+		</div>
+
+		<article class="col-md-3">
+			<figure>
+				<img src="../shared_resources/images/reuters/reuters-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">Dinosaurs like T.&nbsp;rex had unique serrated teeth</a>
+				</h1>
+			</section>
+		</article>
+
+		<article class="col-md-3">
+			<figure>
+				<img src="../shared_resources/images/reuters/reuters-2.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">In Africa’s ‘cradle,’ an old fossil site yields new finds</a>
+				</h1>
+			</section>
+		</article>
+
+		<article class="col-md-3">
+			<figure>
+				<img src="../shared_resources/images/reuters/reuters-3.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">New crew arrives at space station after two-month delay</a>
+				</h1>
+			</section>
+		</article>
+
+		<article class="col-md-3">
+			<figure>
+				<img src="../shared_resources/images/reuters/reuters-4.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">Plant ‘milkers’ seek molecules for medicines and make-up</a>
+				</h1>
+			</section>
+		</article>
+		
+	</section>
+
+	<section class="row double-border-top">
+		<div class="col-md-12">
+			<h1 style="text-align: center;">Graphic of the day</h1>
+
+
+
+			<div class="col-md-8 col-md-offset-2" id="feature-b-1-graphic">
+				<figure class='ai2html' role="group" style="background-color: #2f2f2f;">
+
+					<figcaption class="g-header">
+						<h1>In the flesh</h1>
+						<p>Our picture of <em>Tyrannosaurus rex</em> has undergone several makeovers since the dinosaur was first described in 1905. Early reconstructions depicted a scaly beast that stood upright and dragged its tail on the ground, but recent research suggests the Cretaceous carnivore had a more agile horizontal posture and may have been covered in some sort of plumage.</p>
+					</figcaption>
+
+					<figure class="g-artboard">
+							<img class='g-aiImg' src='/nature-mosaic/site/images/feature-b/feature-b-2.jpg' />
+					</figure>
+
+					<figcaption class="g-description g-pointers">
+						<dl class="dl-horizontal">
+							<dt class="g-pointer g-pointer-1">1</dt>
+								<dd class="g-pointer g-pointer-1">
+									<p>Feathers on some close relatives of <em>T.&nbsp;rex</em> are more like fuzz than the plumage on birds.</p>
+								</dd>
+							<dt class="g-pointer g-pointer-2">2</dt>
+								<dd class="g-pointer g-pointer-2">
+									<p>If <em>T.&nbsp;rex</em> had a coat of proto-feathers, they may have served as a form of display.</p>
+								</dd>
+							<dt class="g-pointer g-pointer-3">3</dt>
+								<dd class="g-pointer g-pointer-3">
+									<p>Some researchers contend that <em>T.&nbsp;rex</em> and its kin had scaly skin.</p>
+								</dd>
+							<dt class="g-pointer g-pointer-4">4</dt>
+								<dd class="g-pointer g-pointer-4">
+									<p>Muscle scars on the arm bones suggest that the limbs were not vestigial.</p>
+								</dd>
+						</dl>
+					</figcaption>
+
+				</figure>
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div class="row double-border-top">
+			<div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-12">
+				<h4>Springer Nature</h4>
+	
+				<ul class="list-unstyled">
+					<li><a href="#">About Springer Nature</a></li>
+					<li><a href="#">Work for us</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-12">
+				<h4>CAREERS AND EVENTS</h4>
+
+				<ul class="list-unstyled">
+					<li><a href="#">Natureconferences</a></li>
+					<li><a href="#">Natureevents</a></li>
+					<li><a href="#">Naturejobs.com</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-12">
+				<h4>FOR ADVERTISERS</h4>
+
+				<ul class="list-unstyled">
+					<li><a href="#">Advertising at NPG</a></li>
+					<li><a href="#">Journal audience</a></li>
+					<li><a href="#">Event advertising</a></li>
+					<li><a href="#">Job posts</a></li>
+					<li><a href="#">Contact representative</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-12">
+				<h4>FOR PRESS</h4>
+
+				<ul class="list-unstyled">
+					<li><a href="#">Press site</a></li>
+					<li><a href="#">Press room</a></li>
+					<li><a href="#">Contact press office</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../shared_resources/scripts/tool.js"></script>
+
+</body>
+</html>
+

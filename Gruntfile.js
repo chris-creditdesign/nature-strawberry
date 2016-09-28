@@ -14,7 +14,8 @@ module.exports = function(grunt){
 		},
 		files: {
 		  'shared_resources/css/tool.css': 'shared_resources/sass/tool.scss',
-		  'shared_resources/css/voice.css': 'shared_resources/sass/voice.scss'
+		  'shared_resources/css/voice.css': 'shared_resources/sass/voice.scss',
+		  'shared_resources/css/newsletter.css': 'shared_resources/sass/newsletter.scss'
 		}
 	  }
 	},
@@ -52,7 +53,8 @@ module.exports = function(grunt){
 					'shared_resources/css/*.css',
 					'shared_resources/scripts/*.js',
 					'voice/*.html',
-					'tool/*.html'
+					'tool/*.html',
+					'newsletter/*.html'
 				]
 			},
 			options: {

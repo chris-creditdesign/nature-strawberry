@@ -1,0 +1,212 @@
+// top-five-article
+
+.top-5-expanded, .top-5-collapse {
+
+	.top-5-header {
+	    margin-top: 70px;
+
+	    @include tablet {
+	    	margin-top: 15px;
+	    }
+
+	    h1 {
+	    	padding: 15px 0 10px;
+		    border-top: 1px solid $rules;
+		    border-bottom: 1px solid $rules;
+	    }
+	}
+
+	.top-5-list, .top-5-item {
+		text-align: left;
+	}
+
+	.top-5-pictured {
+		@include tablet {
+			img {
+				float: right;
+				width: 50%;
+				margin: 0 0 10px 10px;
+			}
+		}
+	}
+
+	.top-5-list > li, .top-5-item > .top-5-border-top {
+		margin-top: 30px;
+		padding-top: 20px;
+		border-top: 1px solid $rules;
+	}
+
+	.top-5-item > .top-5-border-top {
+		margin-top: 20px;
+	}
+
+	.top-5-item > .top-5-border-top-xtr {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+
+	.top-5-list > li:first-child, .top-5-list > article:first-child {
+		margin-top: 20px;
+
+		padding-top: 0;
+		border-top: none;
+	}
+
+	h1 {
+		margin-top: 10px;
+	}
+
+	p > a {
+		font-family: newsGothBold;
+		color: $link;
+	}
+
+	label {
+		font-family: newsGothBold;
+		font-size: 1.6em;
+	}
+
+	.list-inline {
+		margin-left: 0;
+	}
+
+	form {
+		input {
+			margin-bottom: 10px; 
+			display: inline-block;
+			box-shadow: none;
+		}
+
+		input:focus {
+			box-shadow: none;
+			border-color: $volume-arrow;
+		}
+
+		@include tablet {
+			input {
+				width: 80%;
+				margin-bottom: 0;
+			}
+			button {
+				width: 19%;
+				float: right;
+			}
+		}
+	}
+}
+
+.collapse-list {
+	margin-bottom: 8px;
+}
+
+.tool-social-icons li {
+	fill: $volume-arrow;
+	transition: fill 0.2s ease;
+
+	&:hover {
+		fill: $dark-text;
+	}
+
+	&.tool-facebook-icon:hover {
+		fill: #37589A;
+	}
+
+	&.tool-twitter-icon:hover {
+		fill: #39A9E0;
+	}
+}
+
+.tool-social-vertical {
+	margin-bottom: 0px;
+	margin-top: 10px;
+
+	li {
+		display: inline-block;
+	}
+	
+
+	@include desktop {
+		text-align: right;
+		margin-top: 20px;
+
+		li {
+			display: list-item;
+		}
+
+		&.tool-social-summary {
+			margin-top: 40px;
+		}
+		
+	}
+
+}
+
+
+.top-5-expanded {
+	h1 {
+		font-size: 2em;
+		line-height: 1.25em;
+
+		@include desktop {
+			font-size: 2.55em;
+			line-height: 1.2em;
+		}
+	}
+
+	.top-5-header {
+	    margin-bottom: 20px;
+
+	    @include desktop {
+	    	margin-bottom: 10px;
+	    }
+	}
+
+	.tool-social-icons {
+		text-align: left;
+
+		margin-bottom: 0px;
+
+		@include desktop {
+			text-align: right;
+		}
+	}
+
+	.tool-social-vertical {
+		margin-bottom: 0px;
+		
+		li {
+			margin-bottom: 0px;
+		}
+
+		@include desktop {
+			margin-top: 80px;
+
+			&.tool-social-summary {
+				margin-top: 40px;
+			}
+
+			li {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+}
+
+.top-5-collapse {
+	h1 {
+		font-size: 1.8em;
+		// font-family: newsGothRegular;
+	}
+
+	.top-5-list > li {
+		margin-top: 10px;
+		padding-top: 15px;
+	}
+
+	.media-object {
+		width: 64px;
+		margin-top: 7px;
+	}
+}
+
