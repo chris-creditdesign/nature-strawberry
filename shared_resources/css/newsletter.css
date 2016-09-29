@@ -447,6 +447,41 @@ h4 {
   margin-right: 0px;
 }
 
+.double-border-newsletter-bottom {
+  margin-bottom: 40px;
+}
+
+.double-border-newsletter-top {
+  margin-top: 60px;
+}
+
+.double-border-newsletter-bottom:after, .double-border-newsletter-top:before {
+  position: relative;
+  top: 30px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+}
+@media (min-width: 992px) {
+  .double-border-newsletter-bottom:after, .double-border-newsletter-top:before {
+    left: 177px;
+    width: calc(100% - 354px);
+  }
+}
+@media (min-width: 1200px) {
+  .double-border-newsletter-bottom:after, .double-border-newsletter-top:before {
+    left: 210px;
+    width: calc(100% - 420px);
+  }
+}
+
+.double-border-newsletter-top:before {
+  top: -30px;
+}
+
 .top-5-expanded .top-5-header, .top-5-collapse .top-5-header {
   margin-top: 70px;
 }

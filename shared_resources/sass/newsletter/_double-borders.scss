@@ -1,0 +1,36 @@
+.double-border-newsletter-bottom {
+	margin-bottom: 40px;
+}
+
+.double-border-newsletter-top {
+	margin-top: 60px;
+}
+
+.double-border-newsletter-bottom:after, .double-border-newsletter-top:before {
+		position: relative;
+		top: 30px;
+		left: 15px;
+		width: calc(100% - 30px);
+
+		@include desktop {
+			left: 177px;
+			width: calc(100% - 354px);
+		}
+
+
+		@include large-desktop {
+			left: 210px;
+			width: calc(100% - 420px);
+		}
+
+		height: 10px;
+		background-color: #fff;
+
+		border-bottom: 1px solid $dark-text;
+		border-top: 1px solid $dark-text;
+
+}
+
+.double-border-newsletter-top:before {
+	top: -30px;
+}
