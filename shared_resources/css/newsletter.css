@@ -81,6 +81,7 @@ h4 {
 .header-wrapper {
   position: relative;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   background-color: #fff;
   color: #222222;
@@ -323,6 +324,12 @@ h4 {
   .article-container-newsletter .heading h1 {
     text-align: center;
   }
+}
+
+.top-photo figcaption {
+  background-color: #eee;
+  padding: 5px 6px;
+  font-size: 0.9em;
 }
 
 .double-border-newsletter-bottom {
