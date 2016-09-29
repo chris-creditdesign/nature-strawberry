@@ -18,10 +18,10 @@
 	.eyebrow {
 		margin-bottom: 5px;
 		margin-top: 10px;
-		font-family: newsGothItalic;
+		font-family: glosaRegular;
 	}
 
-	a {
+	p > a {
 		font-family: newsGothBold;
 		color: $dark-text;
 	}
@@ -29,9 +29,15 @@
 
 .top-photo, .image-of-the-day {
 	figcaption {
-		background-color: $menu;
-		padding: 5px 6px;
+		padding: 5px 0px;
 		font-size: 0.9em;
+		font-family: glosaRegular;
+		color: $light-text;
+	}
+
+	.credit {
+		color: #999;
+		font-size: 0.8em;
 	}
 }
 

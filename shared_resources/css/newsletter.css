@@ -96,27 +96,28 @@ h4 {
   border-bottom: 1px solid #333;
   padding: 10px 0 8px;
   display: inline-block;
+  width: 100%;
 }
-.header-wrapper .logo, .header-wrapper .date-line {
+.header-wrapper .logo {
   width: 250px;
 }
 @media (min-width: 480px) {
-  .header-wrapper .logo, .header-wrapper .date-line {
+  .header-wrapper .logo {
     width: 300px;
   }
 }
 @media (min-width: 768px) {
-  .header-wrapper .logo, .header-wrapper .date-line {
+  .header-wrapper .logo {
     width: 350px;
   }
 }
 @media (min-width: 992px) {
-  .header-wrapper .logo, .header-wrapper .date-line {
+  .header-wrapper .logo {
     width: 400px;
   }
 }
 @media (min-width: 1200px) {
-  .header-wrapper .logo, .header-wrapper .date-line {
+  .header-wrapper .logo {
     width: 450px;
   }
 }
@@ -333,17 +334,22 @@ h4 {
 .article-container-newsletter .eyebrow {
   margin-bottom: 5px;
   margin-top: 10px;
-  font-family: newsGothItalic;
+  font-family: glosaRegular;
 }
-.article-container-newsletter a {
+.article-container-newsletter p > a {
   font-family: newsGothBold;
   color: #333;
 }
 
 .top-photo figcaption, .image-of-the-day figcaption {
-  background-color: #eee;
-  padding: 5px 6px;
+  padding: 5px 0px;
   font-size: 0.9em;
+  font-family: glosaRegular;
+  color: #666;
+}
+.top-photo .credit, .image-of-the-day .credit {
+  color: #999;
+  font-size: 0.8em;
 }
 
 .image-of-the-day h1 {
