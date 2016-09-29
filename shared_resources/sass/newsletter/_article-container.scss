@@ -6,6 +6,8 @@
 	@include desktop {
 		.heading h1 {
 			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 0;
 		}
 	}
 
@@ -21,13 +23,20 @@
 
 	a {
 		font-family: newsGothBold;
+		color: $dark-text;
 	}
 }
 
-.top-photo {
+.top-photo, .image-of-the-day {
 	figcaption {
 		background-color: $menu;
 		padding: 5px 6px;
 		font-size: 0.9em;
+	}
+}
+
+.image-of-the-day {
+	h1 {
+		margin-bottom: 25px;
 	}
 }
