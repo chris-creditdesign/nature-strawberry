@@ -447,6 +447,15 @@ h4 {
   margin-right: 0px;
 }
 
+.article-container-newsletter h1 > a {
+  color: #333;
+}
+@media (min-width: 992px) {
+  .article-container-newsletter .heading h1 {
+    text-align: center;
+  }
+}
+
 .double-border-newsletter-bottom {
   margin-bottom: 40px;
 }

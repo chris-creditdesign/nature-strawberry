@@ -1,0 +1,11 @@
+.article-container-newsletter {
+	h1 > a {
+		color: $dark-text;
+	}
+
+	@include desktop {
+		.heading h1 {
+			text-align: center;
+		}
+	}
+}
