@@ -26,24 +26,6 @@
 		color: $dark-text;
 	}
 
-	.sign-up {
-		a {
-			font-family: newsGothBoldItalic;
-			color: $link;
-		}
-
-		.tool-social-icons {
-			margin-bottom: 10px;
-		}
-	}
-
-	.quote {
-		font-family: glosaItalic;
-		font-size: 2em;
-		text-align: center;
-		color: #888;
-		padding: 10px 0;
-	}
 }
 
 .top-photo, .image-of-the-day {
@@ -65,3 +47,51 @@
 		margin-bottom: 25px;
 	}
 }
+
+.newsletter-b {
+	h1 {
+		text-align: center;
+	}
+
+	.top-photo {
+		margin-bottom: 10px;
+	}
+
+	.sign-up {
+		em a {
+			font-family: newsGothBoldItalic;
+			color: $link;
+		}
+
+		.tool-social-icons {
+			margin-bottom: 10px;
+		}
+	}
+
+	.quote {
+		font-family: glosaItalic;
+		font-size: 1.6em;
+		text-align: center;
+		color: #888;
+		padding: 0 0 10px 0;
+
+		a {
+			font-family: glosaItalic;
+		}
+	}
+
+
+}
+
+footer {
+	p {
+		font-size: 1em;
+		color: $light-text;
+	}
+}
+
+
+
+
+
+

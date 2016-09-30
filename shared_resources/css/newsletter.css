@@ -340,20 +340,6 @@ h4 {
   font-family: newsGothBold;
   color: #333;
 }
-.article-container-newsletter .sign-up a {
-  font-family: newsGothBoldItalic;
-  color: #0067BE;
-}
-.article-container-newsletter .sign-up .tool-social-icons {
-  margin-bottom: 10px;
-}
-.article-container-newsletter .quote {
-  font-family: glosaItalic;
-  font-size: 2em;
-  text-align: center;
-  color: #888;
-  padding: 10px 0;
-}
 
 .top-photo figcaption, .image-of-the-day figcaption {
   padding: 5px 0px;
@@ -368,6 +354,35 @@ h4 {
 
 .image-of-the-day h1 {
   margin-bottom: 25px;
+}
+
+.newsletter-b h1 {
+  text-align: center;
+}
+.newsletter-b .top-photo {
+  margin-bottom: 10px;
+}
+.newsletter-b .sign-up em a {
+  font-family: newsGothBoldItalic;
+  color: #0067BE;
+}
+.newsletter-b .sign-up .tool-social-icons {
+  margin-bottom: 10px;
+}
+.newsletter-b .quote {
+  font-family: glosaItalic;
+  font-size: 1.6em;
+  text-align: center;
+  color: #888;
+  padding: 0 0 10px 0;
+}
+.newsletter-b .quote a {
+  font-family: glosaItalic;
+}
+
+footer p {
+  font-size: 1em;
+  color: #666;
 }
 
 .double-border-newsletter-bottom {
