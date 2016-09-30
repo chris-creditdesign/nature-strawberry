@@ -25,6 +25,25 @@
 		font-family: newsGothBold;
 		color: $dark-text;
 	}
+
+	.sign-up {
+		a {
+			font-family: newsGothBoldItalic;
+			color: $link;
+		}
+
+		.tool-social-icons {
+			margin-bottom: 10px;
+		}
+	}
+
+	.quote {
+		font-family: glosaItalic;
+		font-size: 2em;
+		text-align: center;
+		color: #888;
+		padding: 10px 0;
+	}
 }
 
 .top-photo, .image-of-the-day {
