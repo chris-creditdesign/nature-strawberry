@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nature newsletter design</title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../shared_resources/css/newsletter.css">
+
+	<script>
+		/* Clone figcaption within the figure */
+		function addGraphicPointers (hosts, target) {
+			var content = document.querySelectorAll(hosts);
+			var artboard = document.querySelector(target);	
+
+			Array.prototype.forEach.call(content, function(element, i) {
+				var clone = element.cloneNode(true);
+				clone.classList.remove("g-description");
+
+				var list = clone.querySelector("dl");
+				list.classList.remove("dl-horizontal");
+
+				artboard.appendChild(clone);
+			});
+
+		}
+	</script>
+
+	<!-- Styles for Graphic of the day -->
+	<style type='text/css'>
+		#feature-b-1-graphic .g-header, 
+		#feature-b-1-graphic .g-pointers {
+			color: #ffffff;
+		}
+
+		#feature-b-1-graphic h1 {
+			font-family: knockFourtyNine;
+			font-size:2.4em;
+			line-height: 0.9em;
+			padding-bottom:8px;
+			letter-spacing:0.02em;
+			margin-top: 10px;
+			text-transform: uppercase;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dt,
+		#feature-b-1-graphic .g-artboard figcaption dd {
+			position: absolute;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dd {
+			display: none;
+		}
+
+		#feature-b-1-graphic .g-artboard figcaption dt.g-pointer {
+			height: 10%;
+			width: 10%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+
+		#feature-b-1-graphic .g-pointer-1 {
+			top:5%;
+			left:32%;
+		}
+
+		#feature-b-1-graphic .g-pointer-2 {
+			top:5%;
+			left:53%;
+		}
+
+		#feature-b-1-graphic .g-pointer-3 {
+			top:10%;
+			left:70%;
+		}
+
+		#feature-b-1-graphic .g-pointer-4 {
+			top:55%;
+			left:32%;
+		}
+
+		/*change artboards*/
+		@media screen and (min-width: 768px) {
+			#feature-b-1-graphic .g-artboard figcaption dt.g-pointer {
+				display: none;
+			}
+
+			#feature-b-1-graphic .g-description.g-pointers {
+				display: none;
+			}
+
+			#feature-b-1-graphic .g-artboard figcaption dd.g-pointer {
+				height: 5%;
+				width: 25%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+			}
+
+			#feature-b-1-graphic .g-pointer-1 {
+				top:6%;
+				left:10%;
+			}
+
+			#feature-b-1-graphic .g-pointer-2 {
+				top:6%;
+				left:45%;
+			}
+
+			#feature-b-1-graphic .g-pointer-3 {
+				top:10%;
+				left:73%;
+			}
+
+			#feature-b-1-graphic .g-pointer-4 {
+				top:61%;
+				left:18%;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			#feature-b-1-graphic .g-pointer-1 {
+				top:8%;
+			}
+		}
+	</style>
+
+</head>
+<body data-grid-framework="b3" data-grid-color="red" data-grid-opacity="0.2" data-grid-zindex="100" data-grid-gutterwidth="30px" data-grid-nbcols="12" data-spy="scroll" data-target="#fast-scroll-toc">
+<!-- http://alefeuvre.github.io/foundation-grid-displayer/ -->
+
+
+<div class="container header-wrapper">
+
+	<!-- header -->
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+
+			<div class="logo">
+				<svg x="0px" y="0px" viewBox="0 0 182 30">
+					<g>
+						<g>
+							<path d="M89.2,0.4h1.1v9l0,0c0.2-0.6,0.5-1.1,0.9-1.5s0.8-0.8,1.3-1.1c0.5-0.3,1-0.5,1.6-0.7c0.6-0.1,1.2-0.2,1.8-0.2
+								c1.1,0,2.1,0.2,2.9,0.6s1.5,0.9,2,1.6s0.9,1.5,1.2,2.4s0.4,1.9,0.4,2.9c0,1.8-0.2,3.2-0.7,4.3c-0.5,1.1-1.1,1.9-1.7,2.5
+								c-0.7,0.6-1.4,1-2.1,1.1c-0.7,0.2-1.4,0.3-1.9,0.3c-1,0-1.8-0.2-2.5-0.5s-1.3-0.7-1.7-1.1c-0.4-0.4-0.8-0.8-1-1.2
+								c-0.2-0.4-0.4-0.7-0.4-0.9h-0.1v3.3h-1.1V0.4z M96,20.5c1,0,1.8-0.2,2.5-0.6s1.2-1,1.7-1.7c0.4-0.7,0.7-1.5,0.9-2.3
+								c0.2-0.9,0.3-1.7,0.3-2.6c0-0.8-0.1-1.6-0.3-2.4c-0.2-0.8-0.6-1.5-1-2.1c-0.5-0.6-1-1.1-1.7-1.5s-1.5-0.6-2.3-0.6
+								c-1,0-1.8,0.2-2.5,0.5c-0.7,0.3-1.3,0.8-1.8,1.4s-0.8,1.3-1,2.1c-0.2,0.8-0.3,1.7-0.3,2.6s0.1,1.8,0.3,2.7c0.2,0.9,0.5,1.6,1,2.3
+								c0.5,0.7,1,1.2,1.8,1.6C94.1,20.3,95,20.5,96,20.5z"/>
+							<path d="M107.1,9.5L107.1,9.5c0.2-0.5,0.5-0.9,0.8-1.4c0.4-0.4,0.8-0.8,1.3-1.1c0.5-0.3,1.1-0.5,1.7-0.7s1.3-0.2,2-0.2v1.1
+								c-0.6-0.1-1.2,0-2,0.2c-0.7,0.2-1.5,0.6-2.1,1.3c-0.3,0.3-0.5,0.6-0.7,0.8c-0.2,0.3-0.4,0.6-0.5,0.9s-0.2,0.7-0.3,1.1
+								c-0.1,0.4-0.1,0.9-0.1,1.5v8.2h-1.1v-15h1.1v3.3L107.1,9.5L107.1,9.5z"/>
+							<path d="M115.2,3.4v-3h1.1v3H115.2z M115.2,21.1v-15h1.1v15H115.2z"/>
+							<path d="M121.1,13.8V14c0,0.9,0.1,1.7,0.3,2.5c0.2,0.8,0.6,1.5,1,2.1c0.5,0.6,1,1.1,1.7,1.4s1.5,0.5,2.4,0.5
+								c1.5,0,2.7-0.4,3.6-1.2c0.9-0.8,1.5-1.9,1.8-3.3h1.1c-0.3,1.7-1,3.1-2.1,4c-1.1,0.9-2.5,1.4-4.3,1.4c-1.1,0-2.1-0.2-2.9-0.6
+								s-1.5-0.9-2.1-1.6s-1-1.5-1.2-2.4c-0.3-0.9-0.4-2-0.4-3s0.1-2.1,0.4-3c0.3-1,0.7-1.8,1.3-2.5c0.6-0.7,1.3-1.3,2.1-1.7
+								c0.8-0.4,1.8-0.7,3-0.7c1,0,2,0.2,2.8,0.6s1.5,0.9,2,1.6s1,1.4,1.2,2.3c0.3,0.9,0.4,1.8,0.4,2.8c0,0.1,0,0.2,0,0.3
+								c0,0.1,0,0.2,0,0.3L121.1,13.8L121.1,13.8z M132.1,12.9c0-0.8-0.2-1.6-0.4-2.3c-0.2-0.7-0.6-1.4-1-1.9c-0.5-0.6-1-1-1.7-1.3
+								s-1.4-0.5-2.2-0.5c-0.9,0-1.7,0.2-2.4,0.5s-1.3,0.8-1.7,1.3c-0.5,0.6-0.8,1.2-1.1,1.9c-0.3,0.7-0.4,1.5-0.5,2.3H132.1z"/>
+							<path d="M135,7.1v-1h2.7V3c0-0.5,0.1-1,0.3-1.4c0.2-0.4,0.4-0.7,0.7-0.9c0.3-0.2,0.6-0.4,1-0.5c0.4-0.1,0.8-0.2,1.3-0.2
+								c0.3,0,0.8,0,1.3,0.1v1C141.8,1,141.3,1,141,1c-0.6,0-1.1,0.1-1.6,0.4c-0.4,0.3-0.6,0.8-0.6,1.7v3h3.1v1h-3.1v14h-1.1v-14H135z"/>
+							<path d="M144.8,3.4v-3h1.1v3H144.8z M144.8,21.1v-15h1.1v15H144.8z"/>
+							<path d="M150.3,6.2h1.1v3.2h0.1c0.2-0.6,0.5-1.1,0.8-1.5c0.4-0.4,0.8-0.8,1.3-1.1c0.5-0.3,1-0.5,1.6-0.7s1.1-0.2,1.7-0.2
+								c0.9,0,1.6,0.1,2.2,0.3c0.6,0.2,1.1,0.5,1.5,0.8s0.7,0.7,0.9,1.2c0.2,0.4,0.4,0.9,0.5,1.3s0.2,0.9,0.2,1.3s0,0.8,0,1.1v9.2h-1.1
+								v-9.5c0-0.4,0-0.8-0.1-1.4c-0.1-0.6-0.2-1.1-0.5-1.6c-0.3-0.5-0.7-1-1.3-1.3c-0.6-0.4-1.4-0.6-2.4-0.6c-0.9,0-1.6,0.2-2.3,0.5
+								s-1.2,0.7-1.7,1.3c-0.5,0.6-0.8,1.2-1.1,2c-0.2,0.8-0.4,1.6-0.4,2.5v8.1h-1C150.3,21.1,150.3,6.2,150.3,6.2z"/>
+							<path d="M178.6,6.2v14.2c0,0.8-0.1,1.6-0.3,2.4c-0.2,0.8-0.5,1.5-1,2.1s-1.1,1.1-2,1.4c-0.8,0.4-1.9,0.5-3.2,0.5
+								c-0.8,0-1.5-0.1-2.2-0.2c-0.7-0.2-1.3-0.4-1.8-0.8s-0.9-0.8-1.3-1.4c-0.3-0.6-0.5-1.3-0.5-2.2h1.1c0.1,0.7,0.2,1.2,0.5,1.7
+								c0.3,0.5,0.6,0.8,1.1,1.1c0.4,0.3,0.9,0.5,1.5,0.7c0.5,0.1,1.1,0.2,1.7,0.2c1,0,1.9-0.2,2.6-0.5c0.7-0.3,1.2-0.7,1.6-1.2
+								c0.4-0.5,0.7-1.1,0.9-1.7c0.2-0.6,0.2-1.3,0.2-1.9v-3.4h-0.1c-0.5,1.1-1.2,1.9-2.1,2.5c-0.9,0.6-2,0.9-3.3,0.9
+								c-1.1,0-2.1-0.2-2.9-0.6c-0.8-0.4-1.5-0.9-2-1.6s-0.9-1.4-1.2-2.3c-0.3-0.9-0.4-1.9-0.4-2.9s0.1-1.9,0.4-2.8
+								c0.3-0.9,0.7-1.7,1.2-2.3c0.5-0.7,1.2-1.2,2-1.6c0.8-0.4,1.7-0.6,2.8-0.6c1.2,0,2.3,0.3,3.3,0.9s1.7,1.5,2.1,2.6h0.1V6.3h1.2V6.2
+								L178.6,6.2z M172,6.8c-0.9,0-1.7,0.2-2.4,0.6c-0.7,0.4-1.2,0.9-1.7,1.5c-0.4,0.6-0.8,1.3-1,2.1c-0.2,0.8-0.3,1.5-0.3,2.3
+								c0,0.9,0.1,1.7,0.3,2.5c0.2,0.8,0.6,1.5,1,2.1c0.5,0.6,1,1,1.7,1.4c0.7,0.3,1.4,0.5,2.3,0.5s1.7-0.2,2.4-0.5
+								c0.7-0.3,1.2-0.8,1.7-1.4s0.8-1.3,1-2.1c0.2-0.8,0.3-1.6,0.3-2.4s-0.1-1.6-0.3-2.4c-0.2-0.8-0.6-1.5-1-2.1c-0.5-0.6-1-1.1-1.7-1.4
+								C173.8,7,173,6.8,172,6.8z"/>
+						</g>
+						<g fill="#bf0222">
+							<path d="M15.5,7.6c0.6,0.8,0.7,2.5,0.7,3.7c0,2.4,0,3.9,0,4.9c0,4.3,0,4.2,1.5,4.6c0.4,0.1,0.9,0.1,0.9,0.4c0,0.2-0.3,0.3-0.7,0.3
+								c-0.4,0-2.4-0.1-3.3-0.1s-3,0.1-3.5,0.1c-0.6,0-0.9,0-0.9-0.2c0-0.3,0.7-0.3,1.3-0.5c0.7-0.2,1.1-0.4,1.3-1.3
+								c0.1-0.9,0.1-2.2,0.1-4.8c0-3.2,0-5-0.7-5.9s-1.5-1.1-2.8-1.1S6.9,8.6,6.5,9.4c-0.6,1-0.6,3.2-0.6,5.3c0,2.8,0,4.1,0.2,5.1
+								c0.1,0.5,0.5,0.8,1,1C7.5,21,8.3,21,8.3,21.3s-0.4,0.3-0.8,0.3c-0.3,0-2.8-0.1-3.4-0.1s-3.2,0.1-3.5,0.1c-0.4,0-0.6,0-0.6-0.2
+								c0-0.3,0.5-0.3,1.1-0.5c0.8-0.2,1.2-0.3,1.3-1.1c0.2-1.2,0.2-3.2,0.2-6.3c0-2.1,0-3.5-0.3-3.9C2.2,9.4,1.8,9.2,1.4,9.2
+								C0.9,9.1,0.5,9.1,0.5,8.9c0-0.2,0.1-0.2,0.2-0.3C2.2,8.1,3.6,7.2,5,5.9c0.1-0.1,0.3-0.3,0.5-0.3c0.3,0,0.3,0.3,0.3,0.7V8
+								c0,0.2,0.1,0.5,0.2,0.5c0.6,0,2-2.7,5.3-2.7C13.4,5.6,14.6,6.5,15.5,7.6"/>
+							<path d="M26.5,19.3c-0.8,1.1-2.3,2.5-4.5,2.5c-2.1,0-3-1.7-3-2.9c0-2.6,2.6-3.8,4.6-4.9c3.2-1.6,3.3-1.2,3.3-4.6
+								c0-1,0.1-1.8-0.2-2.2c-0.4-0.9-1-1-1.9-1c-2.3,0-3,2.1-3.5,3.8c-0.2,0.7-1.1,1.1-1.7,1.1c-0.3,0-0.8-0.2-0.8-0.8
+								c0-1.6,2.5-4.9,6.8-4.9c2.1,0,4.5,0.4,4.5,3.1c0,2.2-0.3,8-0.3,9.1s0.2,2.1,1.3,2.1c1.1,0,1.7-0.9,1.9-0.9c0.1,0,0.2,0.2,0.2,0.3
+								c0,0.6-1.3,2.5-3.5,2.5c-1.5,0-2.5-1-2.8-2.1c0-0.1-0.1-0.2-0.2-0.2C26.6,19.2,26.5,19.3,26.5,19.3 M26.3,13.7
+								c-0.5,0-4.2,1.8-4.2,4.4c0,1.4,1.1,2,1.9,2c0.9,0,1.5-0.5,2.1-1.3c0.7-1,0.7-2.6,0.7-4.4C26.8,13.9,26.6,13.7,26.3,13.7"/>
+							<path d="M38.1,3.3C38.1,4,38,5,38,5.7c0,0.3,0.1,0.5,0.4,0.5L46,5.9c0.7,0,0.8,0.1,0.8,0.9c0,1.5-0.1,2.9-0.1,9.8
+								c0,1.7,0.8,2.9,3.2,2.9c1.3,0,2.7-0.6,3.2-1.6c0.4-0.7,0.4-2.9,0.4-4.7c0-3.7,0-5.5-0.4-5.9c-0.3-0.3-0.9-0.4-1.5-0.4
+								c-0.7-0.1-1-0.1-1-0.3c0-0.2,0.1-0.3,0.6-0.3l5.1-0.1c0.6,0,0.7,0.2,0.7,0.6c0,1.3-0.2,5.5-0.2,8.8c0,2,0,3.5,0.3,3.9
+								c0.2,0.3,0.5,0.4,1.2,0.4c0.2,0,0.8-0.1,1-0.1c0.1,0,0.2,0.1,0.2,0.2c0,0.2-0.2,0.3-0.6,0.3c-0.7,0.1-3.4,0.8-4.6,1.3
+								c-0.2,0.1-0.5,0.2-0.6,0.2c-0.2,0-0.3-0.2-0.3-0.6c0-0.5,0.1-0.9,0.1-1.6c0-0.3-0.1-0.5-0.3-0.5c-0.4,0-2.3,2.6-5.3,2.6
+								c-1.8,0-4.4-1-4.4-4.6c0-2,0.1-7.7,0.1-8.5c0-1.4,0-1.4-2.9-1.4c-0.9,0-1.7,0-2.2,0.1c-0.5,0-0.6,0.1-0.6,0.9
+								c-0.1,1.2-0.1,3.1-0.1,7.2c0,1.7,0,2.8,0.3,3.5c0.3,0.6,0.9,0.8,1.8,0.8c1.2,0,2.4-0.6,2.6-0.6c0.1,0,0.2,0.1,0.2,0.2
+								c0,0.3-2.3,2.4-4.8,2.4c-2.7,0-3.3-2-3.3-4.7c0-1.4,0.2-7.8,0.2-8.2s0-1-0.7-1H33c-0.2,0-0.3-0.1-0.3-0.2c0-0.3,0.3-0.3,0.8-0.7
+								c1.2-0.8,3-2.2,3.8-3.5c0.2-0.3,0.3-0.5,0.5-0.5C38,2.9,38.1,3,38.1,3.3"/>
+							<path d="M60.2,8.9c-0.2,0-0.4-0.1-0.4-0.2c0-0.2,0.2-0.3,0.7-0.5s2.6-1.4,3.6-2.3c0.5-0.5,0.7-0.5,0.8-0.5c0.2,0,0.3,0.1,0.3,0.6
+								v1.8c0,0.3,0.1,0.4,0.2,0.4c0.5,0,1.7-2.7,4.1-2.7c1.3,0,2.2,1,2.2,2.1c0,1.2-0.9,1.9-1.9,1.9c-1.3,0-1.6-1.4-2.8-1.4
+								c-0.6,0-0.9,0.4-1.1,0.7c-0.6,0.7-0.7,2.7-0.7,5.6c0,2.7,0,4.8,0.3,5.4c0.4,0.6,1.9,0.8,2.4,0.9c0.4,0.1,0.7,0,0.7,0.4
+								c0,0.3-0.5,0.3-0.7,0.3s-2.9-0.1-4.1-0.1c-1.1,0-3.5,0.1-3.8,0.1c-0.3,0-0.7,0-0.7-0.3s0.4-0.3,0.8-0.4c0.3-0.1,1.4-0.3,1.6-0.9
+								s0.3-1.9,0.3-6.2C61.9,9.5,61.9,9,60.2,8.9"/>
+							<path d="M83.2,11.4c-2.2,0-4.8-0.2-8-0.2c-0.8,0-1.2,0-1.2,1.5c0,3.6,1.6,6.8,5.7,6.8c3.1,0,4.4-2.1,4.7-2.1
+								c0.2,0,0.2,0.1,0.2,0.2c0,0.6-2.9,4.1-6.7,4.1c-4.2,0-7.4-3-7.4-7.8c0-5.1,3.8-8.5,8.3-8.5c3.3,0,5.9,2.5,5.9,5.1
+								C84.7,11.4,84.2,11.4,83.2,11.4 M78.7,6.2c-2.8,0-4.2,2.4-4.2,3.6c0,0.4,0.5,0.6,2.2,0.6c2,0,4.8-0.1,4.8-2
+								C81.5,7.7,80.8,6.2,78.7,6.2"/>
+						</g>
+					</g>
+				</svg>
+			</div>
+
+			<p class="date-line">Thursday, 13 October 2016</p>
+
+			<p class="sponsor-line"><em>Nature</em>briefing supported by
+				<span class="sponsor-logo">
+					<svg x="0px" y="0px" width="100px" height="29.3px" viewBox="0 0 100 29.3">
+					<style type="text/css">
+						.st0{fill:#005191;}
+						.st1{fill:#1D1D1B;}
+					</style>
+					<g>
+						<path class="st0" d="M0,19.1V18c1.9,0,3.5-0.7,3.5-2.6V3.1c0-1.4-1.2-1.6-3.3-1.6V0.3h10.4l5,12.7h0.1l5.1-12.7h10.4v1.1
+							c-2.6,0-3.4,0.4-3.4,1.8v13c0,1.4,0.9,1.8,3.4,1.8v1.1H18.8V18c2.3,0,3.2-0.4,3.2-1.8V2.3h-0.1l-6.8,16.8h-3.1L5.5,2.3H5.5v13.1
+							c0,1.9,1.6,2.5,3.7,2.6v1.1H0z"/>
+						<path class="st0" d="M30.1,19.1V18c2.7-0.4,3.5-1.2,4.8-3.5L42.8,0h1.9l9.1,16.2c0.7,1.3,1.5,1.7,3.4,1.8v1.1H44.3V18h1.4
+							c1.8,0,2.1-0.3,2.1-0.9c0-0.4-0.2-0.7-0.4-1.1l-1.7-3.1h-7.8l-1.1,2.2c-0.2,0.4-0.4,1-0.4,1.7c0,0.8,0.6,1.3,2,1.3h1.7v1.1H30.1z
+							 M41.7,5.7l-3,5.8H45L41.7,5.7z"/>
+						<path class="st0" d="M80.8,15c0,2.7-1.5,4.5-5.5,4.5c-3.8,0-5.3-1.5-5.6-4.7c-0.3-3.3-0.4-4.2-4.4-4.6v5.7c0,1.6,0.5,2.2,3.6,2.2
+							v1.1H55.7V18c2.8,0,3.7-0.4,3.7-1.8v-13c0-1.4-0.9-1.8-3.7-1.8V0.3h13.1c6.3,0,9.6,1.9,9.6,5c0,3.6-4.9,4.5-9,4.5v0.1
+							c4.6,0.4,5.6,2.2,6.5,4.1c1.2,2.7,1.4,3,2.3,3c0.9,0,1.2-1.1,1.3-2H80.8z M65.3,9.1c4.1-0.1,6.6-0.6,6.6-3.7c0-2.3-1.6-3.8-4.1-3.8
+							c-1.3,0-2.4,0.4-2.4,1.6V9.1z"/>
+						<path class="st0" d="M81.1,11.9h1.6c1,3,3.3,6.3,7.9,6.3c2.5,0,4.6-0.9,4.6-3.2c0-4-13.8-2.6-13.8-8.8c0-3.9,3.8-6.2,8.3-6.2
+							c3.9,0,5.2,1.4,6.1,1.4c0.7,0,1-0.6,1.4-1.1h1.5v6.5h-1.4c-1-3-3.3-5.6-7-5.6c-2.2,0-4.1,1-4.1,2.8c0,4.3,14,2.2,14,9.2
+							c0,4.1-4.8,6.2-8.8,6.2c-4.4,0-6-1.4-7.2-1.4c-0.7,0-1.2,0.7-1.5,1.1h-1.4V11.9z"/>
+					</g>
+					<g>
+						<path class="st1" d="M56.1,27.7c-0.2,0-0.3-0.2-0.3-0.4v-3.4c0-0.2,0.2-0.4,0.3-0.4h0.4c0.2,0,0.3,0.2,0.3,0.4v3.4
+							c0,0.2-0.2,0.4-0.3,0.4H56.1z M56.3,22c0.3,0,0.5,0.3,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5c-0.3,0-0.5-0.2-0.5-0.5
+							C55.8,22.3,56,22,56.3,22"/>
+						<path class="st1" d="M60.3,27.7c-0.2,0-0.3-0.2-0.3-0.4v-2c0-0.3-0.2-0.7-0.7-0.7c-0.5,0-0.7,0.3-0.7,0.7v2c0,0.2-0.2,0.4-0.3,0.4
+							h-0.5c-0.2,0-0.3-0.2-0.3-0.4v-3.5c0-0.2,0.1-0.4,0.3-0.4h0.5c0.1,0,0.2,0.1,0.2,0.2c0.2-0.1,0.5-0.2,0.8-0.2
+							c1.2,0,1.7,0.9,1.7,1.8v2.1c0,0.2-0.2,0.4-0.3,0.4H60.3z"/>
+						<path class="st1" d="M61.8,25.2c0-0.8,0.6-1.8,1.8-1.8c0.5,0,0.9,0.2,1.2,0.4c0.1,0.1,0.1,0.3,0,0.5l-0.2,0.3v0
+							c-0.1,0.2-0.3,0.2-0.5,0.1c-0.1-0.1-0.4-0.2-0.7-0.2c-0.5,0-0.7,0.3-0.7,0.6V26c0,0.3,0.2,0.7,0.7,0.7c0.2,0,0.5-0.1,0.6-0.2
+							c0.1-0.1,0.3-0.1,0.4,0c0.1,0.1,0.2,0.3,0.3,0.4c0.1,0.1,0,0.3-0.1,0.5c-0.3,0.2-0.7,0.4-1.3,0.4c-1.2,0-1.8-0.9-1.8-1.8V25.2z"/>
+						<path class="st1" d="M69.2,26c0,0.8-0.6,1.8-1.8,1.8c-1.2,0-1.8-0.9-1.8-1.8v-0.7c0-0.8,0.6-1.8,1.8-1.8c1.2,0,1.8,0.9,1.8,1.8V26z
+							 M68.2,26v-0.7c0-0.3-0.2-0.7-0.7-0.7c-0.5,0-0.7,0.3-0.7,0.6V26c0,0.3,0.2,0.7,0.7,0.7C67.9,26.6,68.1,26.3,68.2,26"/>
+						<path class="st1" d="M70.3,27.7c-0.2,0-0.3-0.2-0.3-0.4v-3.4c0-0.2,0.2-0.4,0.3-0.4h0.4c0.1,0,0.2,0.1,0.3,0.2
+							c0.2-0.1,0.5-0.2,0.7-0.2c0.2,0,0.5,0,0.7,0.1c0.2,0.1,0.2,0.2,0.2,0.4l-0.2,0.4c-0.1,0.2-0.2,0.3-0.4,0.2c-0.1,0-0.3-0.1-0.4-0.1
+							c-0.4,0-0.7,0.3-0.7,0.7v2.1c0,0.2-0.2,0.4-0.3,0.4H70.3z"/>
+						<path class="st1" d="M73.5,29.3c-0.2,0-0.3-0.2-0.3-0.4v-5c0-0.2,0.1-0.4,0.3-0.4H74c0.1,0,0.2,0.1,0.2,0.1
+							c0.2-0.1,0.5-0.2,0.8-0.2c1.2,0,1.7,0.9,1.7,1.8V26c0,0.9-0.5,1.8-1.7,1.8c-0.3,0-0.5,0-0.7-0.1v1.3c0,0.2-0.2,0.4-0.3,0.4H73.5z
+							 M75.6,26v-0.7c0-0.3-0.2-0.7-0.6-0.7c-0.5,0-0.7,0.3-0.7,0.6V26c0,0.3,0.2,0.7,0.7,0.7C75.4,26.6,75.6,26.3,75.6,26"/>
+						<path class="st1" d="M81,26c0,0.8-0.6,1.8-1.8,1.8c-1.2,0-1.8-0.9-1.8-1.8v-0.7c0-0.8,0.6-1.8,1.8-1.8c1.2,0,1.8,0.9,1.8,1.8V26z
+							 M79.9,26v-0.7c0-0.3-0.2-0.7-0.7-0.7c-0.5,0-0.7,0.3-0.7,0.6V26c0,0.3,0.2,0.7,0.7,0.7C79.7,26.6,79.9,26.3,79.9,26"/>
+						<path class="st1" d="M82.1,27.7c-0.2,0-0.3-0.2-0.3-0.4v-3.4c0-0.2,0.2-0.4,0.3-0.4h0.4c0.1,0,0.2,0.1,0.3,0.2
+							c0.2-0.1,0.5-0.2,0.7-0.2c0.2,0,0.5,0,0.7,0.1c0.2,0.1,0.2,0.2,0.2,0.4l-0.2,0.4c-0.1,0.2-0.2,0.3-0.4,0.2c-0.1,0-0.3-0.1-0.4-0.1
+							c-0.4,0-0.7,0.3-0.7,0.7v2.1c0,0.2-0.2,0.4-0.3,0.4H82.1z"/>
+						<path class="st1" d="M87.6,27.7c-0.1,0-0.2-0.1-0.2-0.2c-0.2,0.1-0.5,0.2-0.8,0.2c-1.2,0-1.7-0.6-1.7-1.4c0-0.9,0.5-1.4,1.7-1.4
+							c0.3,0,0.5,0.1,0.7,0.2c0-0.3-0.2-0.6-0.7-0.6c-0.3,0-0.7,0.1-0.8,0.3c-0.1,0.1-0.2,0-0.4-0.1l-0.2-0.3v0c-0.1-0.1-0.1-0.3,0.1-0.4
+							c0.3-0.2,0.8-0.4,1.3-0.4c1.1,0,1.6,0.7,1.6,1.5v2.4c0,0.2-0.2,0.3-0.3,0.3H87.6z M86,26.3c0,0.3,0.3,0.4,0.7,0.4
+							c0.4,0,0.7-0.2,0.7-0.4c0-0.3-0.3-0.4-0.7-0.4C86.3,25.9,86,26,86,26.3"/>
+						<path class="st1" d="M91.7,27.3c0,0.2-0.1,0.4-0.4,0.4c-1.1,0-1.6-0.4-1.6-1.3v-2h-0.5c-0.2,0-0.3-0.2-0.3-0.4v-0.2
+							c0-0.2,0.1-0.4,0.3-0.4h0.5V23c0-0.2,0.2-0.4,0.3-0.4h0.4c0.2,0,0.3,0.2,0.3,0.4v0.5h0.6c0.2,0,0.3,0.2,0.3,0.4v0.2
+							c0,0.2-0.2,0.4-0.3,0.4h-0.6v1.6c0,0.3,0.2,0.5,0.6,0.5c0.2,0,0.3,0.2,0.3,0.3V27.3z"/>
+						<path class="st1" d="M95.4,26.9c0.1,0.1,0,0.4-0.1,0.5c-0.3,0.2-0.7,0.4-1.3,0.4c-1.2,0-1.8-0.9-1.8-1.8v-0.7
+							c0-0.8,0.6-1.8,1.8-1.8c1.2,0,1.8,0.9,1.8,1.8v0.4c0,0.2-0.2,0.4-0.3,0.4h-2.2c0,0.3,0.3,0.6,0.7,0.6c0.2,0,0.5-0.1,0.7-0.2
+							c0.1-0.1,0.3,0,0.4,0.1L95.4,26.9z M93.4,24.9v0.2h1.3v-0.2c0-0.3-0.3-0.4-0.6-0.4C93.7,24.5,93.4,24.7,93.4,24.9"/>
+						<path class="st1" d="M99.3,27.7c-0.1,0-0.1-0.1-0.2-0.1c-0.2,0.1-0.5,0.2-0.8,0.2c-1.2,0-1.7-0.9-1.7-1.8v-0.7
+							c0-0.8,0.5-1.7,1.7-1.7c0.2,0,0.5,0,0.7,0.1v-1.3c0-0.1,0.2-0.4,0.3-0.4h0.4c0.2,0,0.3,0.2,0.3,0.4v5.1c0,0.2-0.1,0.4-0.3,0.4H99.3
+							z M98.9,26v-0.7c0-0.3-0.2-0.6-0.7-0.6c-0.5,0-0.7,0.3-0.7,0.7V26c0,0.3,0.2,0.7,0.7,0.7C98.8,26.6,98.9,26.3,98.9,26"/>
+					</g>
+					</svg>
+				</span>
+			</p>
+
+		</div>
+
+	</div>
+	
+</div>
+
+<div class="container tool">
+
+	<div class="row top-photo">
+		<div class="col-md-8 col-md-offset-2">
+			<figure>
+				<img src="../shared_resources/images/GettyImages-531883168.jpg" alt="" class="img-responsive">
+				<figcaption>
+					France's research and higher-education minister, Thierry Mandon, says that the country's draft 2017 research budget is the largest increase in 15 years. <span class="credit">Eric Feferberg/AFP/Getty Images</span>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+
+
+	<!-- The top five -->
+	<section class="row article-container top-5-collapse double-border-newsletter-bottom">
+
+		<div class="col-md-8 col-md-offset-2">
+
+			<ul class="list-unstyled top-5-list">
+				<li>
+					<article class="media">
+							
+						<section class="media-body">
+						
+							<div class="top-5-pictured">
+								<p><strong>Good morning Mariette,</strong></p>
+
+								<p>Today in a world first, <a href="#">Chinese scientists have reported editing the genomes of human embryos</a>. The results are published in the online journal <em>Protein & Cell</em> and confirm widespread rumours that such experiments had been conducted — rumours that <a href="#">sparked a high-profile debate</a> last month about the ethical implications of such work.</p>
+
+							</div>
+
+						</section>
+
+					</article>
+				</li>
+
+				<li>
+					<article class="media">
+						
+						<section class="media-body">
+							<div>
+								<p>A genomic analysis of more than 5,000 Chinese women with recurrent major depressive disorder (MDD) has identified and replicated <a href="#">two genome-wide significant loci contributing to risk of MDD</a> on chromosome 10. One is near the sirtuin1 (<em>SIRT1</em>) gene, and the other is in an intron of the phospholysine phosphohistidine inorganic pyrophosphate phosphatase (<em>LHPP</em>) gene. The association close to <a href="#"><em>SIRT1</em> may implicate abnormalities in mitochondria</a> as risk factors for the disease.</p>
+
+							</div>
+	
+						</section>
+					</article>
+				</li>
+
+				<li>
+					<article class="media">
+						<section class="media-body">
+		
+							<div>
+								<p>Compared to nonmusicians, young children who strum a guitar or blow a trombone become better readers with better vocabularies. A new study shows that the benefits extend to teenagers as well. Neuroscientists compared two groups of high school students over 3 years: One began learning their first instrument in band class, whereas the other focused on physical fitness in Junior Reserve Officers’ Training Corps (JROTC). At the end of 3 years, those <a href="#">students who had played instruments were better at detecting speech sounds</a>, like syllables and words that rhyme, than their JROTC peers, the team reports online today in the <em>Proceedings of the National Academy of Sciences</em>. Researchers know that as children grow up, their ability to soak up new information, especially language, starts to diminish. These findings suggest that musical training could keep that window open longer. But the benefits of music aren’t just for musicians; taking up piano could be the difference between an A and a B in Spanish class.</p>
+
+								<ul class="list-inline tool-social-icons">
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-playlist-icon" />
+											</svg>
+										</button>
+									</li>
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-bookmark-icon" />
+											</svg>
+										</button>
+									</li>
+									<li>
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-email-icon" />
+											</svg>
+										</button>
+									</li>
+									<li class="tool-facebook-icon">
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-facebook-icon" />
+											</svg>
+										</button>
+									</li>
+									<li class="tool-twitter-icon">
+										<button class="invisible-btn">
+											<svg width="30px" height="30px" viewBox="0 0 30 30">
+												<use xlink:href="../shared_resources/images/icons/svg-symbols.svg#tool-twitter-icon" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+					</article>
+				</li>
+				<li>
+					<form>
+						<label for="exampleInputEmail1">The week’s best science form the world's #1 science journal.</label>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email">
+							<button type="submit" class="btn btn-default">Subscribe</button>
+						</div>
+					</form>
+
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<!-- More of the best -->
+	<section class="row article-container-newsletter small-article double-border-newsletter-bottom">
+		<div class="col-md-8 col-md-offset-2 heading">
+			<h1>News and Comment of the day</h1>
+		</div>
+
+		<article class="col-md-8 col-md-offset-2">
+			<section>
+				<p class="eyebrow" style="color: #bf0222;">News</p>
+				<h1><a href="#">Nanoscale objects built from DNA</a></h1>
+				<p>Representations of 3D surfaces used in computer graphics used to lower the barriers to applications of DNA nanotechnology.</p>
+				<p>The centre of the historic city of Königsberg (today's Kaliningrad) is built on and around an island in the mouth of the Pregel River, between two of the river's branches. Seven bridges connect the island and the three surrounding parts of the city. In the early eighteenth century, a mathematical question arose that became famously known as 'the Seven bridges of Königsberg': is it possible to devise a loop walk that visits all four parts of the city, and in which all bridges are crossed only once? <a href="#">Read more</a></p>
+			</section>
+		</article>
+
+		<article class="col-md-8 col-md-offset-2">
+			<section>
+				<p class="eyebrow" style="color: #bf0222;">News</p>
+				<h1><a href="#">Oil droplets turn cells into tiny lasers</a></h1>
+				<p>Injecting single cells with spheres of fluorescent dye could open new research and treatment avenues using light.</p>
+				<p>The system was devised by Seok Hyun Yun and Matjaž Humar, both optical physicists at Harvard Medical School in Cambridge, Massachusetts, and uses droplets of fat or oil within a cell to reflect and amplify light, generating a laser.</p>
+				<p>Yun had previously reported a method for generating laser light by engineering cells to express a fluorescent jellyfish protein, then placing a single such cell between a pair of external mirrors. His latest work goes a step further, producing a cell with a self-contained laser. <a href="#">Read more</a></p>
+			</section>
+		</article>
+
+		<article class="col-md-8 col-md-offset-2">
+			<section>
+				<p class="eyebrow" style="color: #5eabd0;">Comment</p>
+				<h1><a href="#">Neanderthals had outsize effect on human biology</a></h1>
+				<p>From skin disorders to the immune system, sex with archaic species changed <em>Homo sapiens</em>.</p>
+				<p>But these sequences may have had an outsize effect on human biology. In some cases, they are very different from the corresponding <em>H. sapiens</em> DNA, notes population geneticist David Reich of Harvard Medical School in Boston, Massachusetts — which makes it more likely that they could introduce useful traits. “Even though it’s only a couple or a few per cent of ancestry, that ancestry was sufficiently distant that it punched above its weight,” he says. <a href="#">Read more</a></p>
+			</section>
+		</article>
+
+	</section>
+
+	<section class="row article-container small-article double-border-newsletter-bottom">
+		<div class="col-md-12">
+			<h1>Recommended for you</h1>
+		</div>
+
+		<article class="col-md-4 col-md-offset-2">
+			<figure>
+				<img src="../shared_resources/images/recommended/recommended-1.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">Vibrant Pluto stuns scientists</a>
+				</h1>
+				<p>Mission seeking clues to early Solar System finds a world made anew.</p>
+			</section>
+		</article>
+
+		<article class="col-md-4">
+			<figure>
+				<img src="../shared_resources/images/recommended/recommended-2.jpg" alt="" class="img-responsive">
+			</figure>
+			<section>
+				<h1>
+					<a href="#">The architecture of RNA</a>
+				</h1>
+				<p>Researchers are working out cell's RNA structures — and how important they could be.</p>
+			</section>
+		</article>
+
+	</section>
+
+	<section class="row double-border-newsletter-bottom">
+		<div class="col-md-12">
+			<h1 style="text-align: center;">Graphic of the day</h1>
+		</div>
+
+		<div class="col-md-8 col-md-offset-2" id="feature-b-1-graphic">
+			<figure class='ai2html' role="group" style="background-color: #2f2f2f;">
+
+				<figcaption class="g-header">
+					<h1>In the flesh</h1>
+					<p>Our picture of <em>Tyrannosaurus rex</em> has undergone several makeovers since the dinosaur was first described in 1905. Early reconstructions depicted a scaly beast that stood upright and dragged its tail on the ground, but recent research suggests the Cretaceous carnivore had a more agile horizontal posture and may have been covered in some sort of plumage.</p>
+				</figcaption>
+
+				<figure class="g-artboard">
+						<img class='g-aiImg' src='/nature-mosaic/site/images/feature-b/feature-b-2.jpg' />
+				</figure>
+
+				<figcaption class="g-description g-pointers">
+					<dl class="dl-horizontal">
+						<dt class="g-pointer g-pointer-1">1</dt>
+							<dd class="g-pointer g-pointer-1">
+								<p>Feathers on some close relatives of <em>T.&nbsp;rex</em> are more like fuzz than the plumage on birds.</p>
+							</dd>
+						<dt class="g-pointer g-pointer-2">2</dt>
+							<dd class="g-pointer g-pointer-2">
+								<p>If <em>T.&nbsp;rex</em> had a coat of proto-feathers, they may have served as a form of display.</p>
+							</dd>
+						<dt class="g-pointer g-pointer-3">3</dt>
+							<dd class="g-pointer g-pointer-3">
+								<p>Some researchers contend that <em>T.&nbsp;rex</em> and its kin had scaly skin.</p>
+							</dd>
+						<dt class="g-pointer g-pointer-4">4</dt>
+							<dd class="g-pointer g-pointer-4">
+								<p>Muscle scars on the arm bones suggest that the limbs were not vestigial.</p>
+							</dd>
+					</dl>
+				</figcaption>
+
+			</figure>
+		</div>
+
+	</section>
+
+	<section class="row article-container-newsletter small-article double-border-newsletter-bottom">
+
+		<article class="col-md-8 col-md-offset-2">
+			<section>
+				<p class="eyebrow" style="color: orange;">Sponsor content by Mars Incorporated</p>
+				<h1><a href="#">The new space race is closer to earth.</a></h1>
+				<p>The newest developments in space technology allow us to service satellites and reach the International Space Station more easily than ever before. From commerce to security to agriculture, the <a href="#">resulting effect on everyday life</a> is being felt across the globe.</p>
+			</section>
+		</article>
+	</section>
+
+	<section class="row image-of-the-day">
+		<div class="col-md-12">
+			<h1 style="text-align: center;">Image of the day</h1>
+		</div>
+
+		<div class="col-md-8 col-md-offset-2 ">
+			<figure>
+				<img src="http://i.giphy.com/l2Sq1WUTZeWNXaoEM.gif" alt="" class="img-responsive" style="width: 100%;">
+				<figcaption>
+					The Gaia spacecraft’s billion-pixel camera maps stars and other objects in the Milky Way. <span class="credit">C. Carreau/ESA</span>
+				</figcaption>
+			</figure>
+		</div>
+
+	</section>
+
+	<footer class="row double-border-newsletter-top">
+		<div class="col-md-8 col-md-offset-2">
+			<p>Thanks for subscribing to The Nature Daily News Alert.</p>
+
+			<p>To unsubscribe from this alert please <a href="#">enter your email address here to suppress all emails</a>.</p>
+
+			<svg x="0px" y="0px" width="139px" height="13.5px" viewBox="0 0 139 13.5">
+					<g fill="#666">
+						<path d="M74.9,5.3c0-2.8-2.4-3.8-4.6-3.8c-1.1,0-2.8,0-3.8,0v11.6h2.9V9.6h0.9c0.2,0,0.3,0,0.5,0l0,0l0,0
+							c0.5,0.8,1.1,2,1.3,3.5c0.6,0,1.1,0,1.5,0h0.8c0.3,0,0.5,0,0.8,0c-0.3-1.8-1.2-3.5-1.8-4.4l0,0l0,0C74.3,7.8,74.9,6.7,74.9,5.3z
+							 M71.8,5.7c0,1.2-0.5,1.7-1.6,1.7c-0.4,0-0.6,0-0.8,0l0,0V3.7l0,0c0.3,0,0.6,0,0.9,0C71.6,3.7,71.8,4.4,71.8,5.7z M64.3,13.1v-2.3
+							h-4.1V8.3h3.7V6.1h-3.7V3.8h4.1V1.5h-6.8V11c0,0,0,0.9,0.6,1.5c0.4,0.4,0.9,0.6,1.6,0.6C61.7,13.2,64,13.1,64.3,13.1z M51.4,13.5
+							c1.1,0,2.8-0.3,4.1-0.9V6.8h-3.8v2h1.2v2.4l0,0c-0.3,0.1-1,0.2-1.3,0.2c-1.5,0-2.1-1.1-2.1-4c0-2.5,0.9-3.8,2.7-3.8
+							c0.6,0,1.5,0.3,2.4,0.7l0.8-1.9c-1.1-0.7-2.4-1-3.6-1c-1.7,0-3,0.5-3.8,1.5c-0.8,1-1.2,2.5-1.2,4.5C46.6,11.8,47.9,13.5,51.4,13.5z
+							 M41.7,13.1h3V1.5h-2.5v7.6l-3.4-7.6h-3.1v11.6h2.5V5.8L41.7,13.1L41.7,13.1z M30.2,13.1h2.9V1.5h-2.9V13.1z M26.6,8.7L26.6,8.7
+							L26.6,8.7c1-0.8,1.5-2,1.5-3.4c0-2.8-2.4-3.8-4.6-3.8c-1.1,0-2.8,0-3.8,0v11.6h2.9V9.6h0.9c0.2,0,0.3,0,0.5,0l0,0l0,0
+							c0.5,0.8,1.1,2,1.3,3.5c0.6,0,1.1,0,1.5,0h0.8c0.3,0,0.5,0,0.8,0C28.1,11.3,27.2,9.6,26.6,8.7z M25,5.7c0,1.2-0.5,1.7-1.6,1.7
+							c-0.4,0-0.6,0-0.8,0l0,0V3.7l0,0c0.3,0,0.6,0,0.9,0C24.8,3.7,25,4.4,25,5.7z M18.2,5.2c0-2.4-1.5-3.7-4.3-3.7c-1.1,0-2.8,0-3.8,0
+							v11.6H13V9.6h0.9C15.2,9.6,18.2,9.1,18.2,5.2z M15.5,5.7c0,1.2-0.5,1.7-1.6,1.7c-0.4,0-0.6,0-0.8,0l0,0V3.7l0,0c0.3,0,0.6,0,0.9,0
+							C15.2,3.7,15.5,4.4,15.5,5.7z M3.3,3.7c0-0.6,0.4-1.3,1.4-1.3c0.7,0,1.5,0.2,2.5,0.7l1-2.1C7,0.3,5.8,0,4.5,0
+							C1.8,0,0.3,1.4,0.3,3.8s1.8,3.3,3.3,4c1.1,0.5,2,1,2,1.8c0,0.7-0.7,1.2-1.6,1.2c-0.8,0-1.7-0.3-2.9-0.9l-1,2.2
+							c1.4,0.8,2.7,1.1,4.1,1.1c2.7,0,4.3-1.5,4.3-4c0-2.4-1.8-3.2-3.3-3.9C4.2,4.9,3.3,4.5,3.3,3.7L3.3,3.7z M134.8,10.8V8.3h3.7V6.1
+							h-3.7V3.8h4.1V1.5h-6.8V11c0,0,0,0.9,0.6,1.5c0.4,0.4,0.9,0.6,1.6,0.6c2.1,0,4.4-0.1,4.7-0.1v-2.3H134.8L134.8,10.8z M128.6,8.7
+							L128.6,8.7L128.6,8.7c1-0.8,1.5-2,1.5-3.4c0-2.8-2.4-3.8-4.6-3.8c-1.1,0-2.8,0-3.8,0v11.6h2.9V9.6h0.9c0.2,0,0.3,0,0.5,0l0,0l0,0
+							c0.5,0.8,1.1,2,1.3,3.5c0.6,0,1.1,0,1.5,0h0.8c0.3,0,0.5,0,0.8,0C130.1,11.3,129.2,9.6,128.6,8.7L128.6,8.7z M127,5.7
+							c0,1.2-0.5,1.7-1.6,1.7c-0.4,0-0.6,0-0.8,0l0,0V3.7l0,0c0.3,0,0.6,0,0.9,0C126.8,3.7,127,4.4,127,5.7z M119.5,9V1.5h-3v7.7
+							c0,1.2-0.1,1.9-1.4,1.9c-1.3,0-1.5-0.6-1.5-1.9V1.5h-3v7.8c0,2.8,1.3,4,4.3,4C118.1,13.4,119.5,12,119.5,9L119.5,9z M106.8,3.9h2.2
+							V1.5h-7.8v2.4h2.6v9.2h3C106.8,13.1,106.8,3.9,106.8,3.9z M98,13.1h3.1L98.3,1.5h-4.5L91,13.1h2.9l0.4-1.8h3.2L98,13.1L98,13.1z
+							 M97.2,9.1h-2.5l1.2-5H96l0,0L97.2,9.1L97.2,9.1z M85.9,13.1h3.4v-13h-2.8l0.1,9.1l-4.2-9.1h-3.4v13h2.7l0-9l0.1,0.2L85.9,13.1
+							L85.9,13.1z"/>
+					</g>
+			</svg>
+
+			<p>© 2016 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</p>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../shared_resources/scripts/tool.js"></script>
+
+<script>
+	addGraphicPointers("#feature-b-1-graphic .g-description", "#feature-b-1-graphic .g-artboard");
+</script>
+
+</body>
+</html>
+

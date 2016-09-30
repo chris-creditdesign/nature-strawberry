@@ -121,8 +121,9 @@ h4 {
     width: 450px;
   }
 }
-.header-wrapper .sponsor-logo {
-  top: 12px;
+
+.sponsor-logo {
+  top: 11px;
   position: relative;
 }
 
@@ -382,6 +383,9 @@ h4 {
 }
 .newsletter-b .quote a {
   font-family: glosaItalic;
+}
+.newsletter-b .sponsor-message h1 {
+  text-align: left;
 }
 
 footer p {
