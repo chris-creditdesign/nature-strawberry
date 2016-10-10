@@ -291,7 +291,7 @@ h4 {
   transition: background 0.3s ease;
 }
 .large-search .form-control:focus {
-  border-color: #0067BE;
+  border-color: #0d599a;
 }
 .large-search .search-text {
   background: url(../images/icons/search-bar-focus.png) no-repeat left top;
