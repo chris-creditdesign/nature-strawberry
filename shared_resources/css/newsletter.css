@@ -136,6 +136,12 @@ h4 {
   position: relative;
 }
 
+.readcube-logo {
+  top: 7px;
+  position: relative;
+  text-decoration: none;
+}
+
 .main-nav {
   margin-top: 20px;
   display: none;
