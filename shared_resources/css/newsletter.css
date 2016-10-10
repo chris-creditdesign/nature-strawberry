@@ -166,9 +166,16 @@ h4 {
   margin-top: 10px;
   font-family: glosaRegular;
 }
+.article-container-newsletter .eyebrow.journal {
+  font-family: glosaItalic;
+}
 .article-container-newsletter p > a {
   font-family: newsGothBold;
   color: #333;
+}
+.article-container-newsletter .good-morning {
+  font-family: glosaRegular;
+  font-size: 1.6em;
 }
 .article-container-newsletter .well {
   margin-top: 20px;

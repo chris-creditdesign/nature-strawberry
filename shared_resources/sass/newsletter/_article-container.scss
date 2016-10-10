@@ -27,11 +27,21 @@
 		margin-bottom: 5px;
 		margin-top: 10px;
 		font-family: glosaRegular;
+
+		&.journal {
+			font-family: glosaItalic;
+		}
 	}
+
 
 	p > a {
 		font-family: newsGothBold;
 		color: $dark-text;
+	}
+
+	.good-morning {
+		font-family: glosaRegular;
+		font-size: 1.6em;
 	}
 
 	.well {
