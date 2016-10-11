@@ -185,6 +185,9 @@ h4 {
 .small-article-newsletter article h1 {
   font-size: 1.8em;
 }
+.small-article-newsletter .img-responsive {
+  margin: 0 auto;
+}
 
 .recommended-container-newsletter {
   text-align: center;
