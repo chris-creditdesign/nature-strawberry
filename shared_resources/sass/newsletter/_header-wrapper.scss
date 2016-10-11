@@ -44,20 +44,23 @@
 
 .header-wrapper-masthead {
 	text-align: center;
-	margin-top: 18px;
+	margin-top: 30px;
 
-	.date-line, .daily-briefing {
-		font-family: glosaRegular;
-	}
+	color: #000;
 
 	.date-line {
-		margin-bottom: 6px;
-		font-size: 1em;
+		font-size: 0.8em;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		color: $dark-text;
+		margin-bottom: 20px;
 	}
 
 	.daily-briefing {
+		font-family: glosaRegular;
 		letter-spacing: -1.5px;
 		font-size: 2.4em;
+		margin-bottom: -3px;
 	}
 
 	.logo {
@@ -69,12 +72,11 @@
 	.strap {
 		font-family: knockTwentyNine;
 		text-transform: uppercase;
-		color: $light-text;
 		font-size: 0.78em;
 		letter-spacing: 0.15em;
 
-		border-top: 1px solid $volume-arrow;
-		border-bottom: 1px solid $volume-arrow;
+		border-top: 1px solid $dark-text;
+		border-bottom: 1px solid $dark-text;
 
 		margin-top: 8px;
 
@@ -88,7 +90,7 @@
 
 	@include phone {
 		.date-line {
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 
 		.logo {
@@ -101,12 +103,13 @@
 
 		.daily-briefing {
 			font-size: 3em;
+			margin-bottom: -6px;
 		}
 	}
 
 	@include tablet {
 		.date-line {
-			font-size: 1.2em;
+			font-size: 1em;
 		}
 
 		.logo {
@@ -119,12 +122,13 @@
 
 		.daily-briefing {
 			font-size: 3.4em;
+			margin-bottom: -6px;
 		}
 	}
 
 	@include desktop {
 		.date-line {
-			font-size: 1.4em;
+			font-size: 1em;
 		}
 
 		.logo {
@@ -137,12 +141,13 @@
 
 		.daily-briefing {
 			font-size: 3.7em;
+			margin-bottom: -10px;
 		}
 	}
 
 	@include large-desktop {
 		.date-line {
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 
 		.logo {
@@ -155,6 +160,7 @@
 
 		.daily-briefing {
 			font-size: 4.2em;
+			margin-bottom: -10px;
 		}
 	}
 

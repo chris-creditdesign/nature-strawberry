@@ -125,18 +125,21 @@ h4 {
 
 .header-wrapper-masthead {
   text-align: center;
-  margin-top: 18px;
-}
-.header-wrapper-masthead .date-line, .header-wrapper-masthead .daily-briefing {
-  font-family: glosaRegular;
+  margin-top: 30px;
+  color: #000;
 }
 .header-wrapper-masthead .date-line {
-  margin-bottom: 6px;
-  font-size: 1em;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
 }
 .header-wrapper-masthead .daily-briefing {
+  font-family: glosaRegular;
   letter-spacing: -1.5px;
   font-size: 2.4em;
+  margin-bottom: -3px;
 }
 .header-wrapper-masthead .logo {
   width: 250px;
@@ -146,11 +149,10 @@ h4 {
 .header-wrapper-masthead .strap {
   font-family: knockTwentyNine;
   text-transform: uppercase;
-  color: #666;
   font-size: 0.78em;
   letter-spacing: 0.15em;
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #999999;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
   margin-top: 8px;
   padding-top: 6px;
   padding-bottom: 5px;
@@ -162,7 +164,7 @@ h4 {
 }
 @media (min-width: 480px) {
   .header-wrapper-masthead .date-line {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .header-wrapper-masthead .logo {
     width: 300px;
@@ -172,11 +174,12 @@ h4 {
   }
   .header-wrapper-masthead .daily-briefing {
     font-size: 3em;
+    margin-bottom: -6px;
   }
 }
 @media (min-width: 768px) {
   .header-wrapper-masthead .date-line {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .header-wrapper-masthead .logo {
     width: 350px;
@@ -186,11 +189,12 @@ h4 {
   }
   .header-wrapper-masthead .daily-briefing {
     font-size: 3.4em;
+    margin-bottom: -6px;
   }
 }
 @media (min-width: 992px) {
   .header-wrapper-masthead .date-line {
-    font-size: 1.4em;
+    font-size: 1em;
   }
   .header-wrapper-masthead .logo {
     width: 400px;
@@ -200,11 +204,12 @@ h4 {
   }
   .header-wrapper-masthead .daily-briefing {
     font-size: 3.7em;
+    margin-bottom: -10px;
   }
 }
 @media (min-width: 1200px) {
   .header-wrapper-masthead .date-line {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .header-wrapper-masthead .logo {
     width: 450px;
@@ -214,6 +219,7 @@ h4 {
   }
   .header-wrapper-masthead .daily-briefing {
     font-size: 4.2em;
+    margin-bottom: -10px;
   }
 }
 
