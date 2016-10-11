@@ -61,6 +61,7 @@
 		letter-spacing: -1.5px;
 		font-size: 2.4em;
 		margin-bottom: -3px;
+		margin-bottom: 0px;
 	}
 
 	.logo {
@@ -80,6 +81,7 @@
 
 		margin-top: 8px;
 
+
 		padding-top: 6px;
 		@include tablet {
 			padding-top: 8px;
@@ -94,7 +96,7 @@
 		}
 
 		.logo {
-			width: 300px;
+			width: 280px;
 		}
 
 		.strap {
@@ -102,7 +104,7 @@
 		}
 
 		.daily-briefing {
-			font-size: 3em;
+			font-size: 2.9em;
 			margin-bottom: -6px;
 		}
 	}
@@ -113,15 +115,15 @@
 		}
 
 		.logo {
-			width: 350px;
+			width: 250px;
 		}
 
 		.strap {
-			font-size: 1.08em;
+			font-size: 1em;
 		}
 
 		.daily-briefing {
-			font-size: 3.4em;
+			font-size: 3.1em;
 			margin-bottom: -6px;
 		}
 	}
@@ -132,35 +134,36 @@
 		}
 
 		.logo {
-			width: 400px;
+			width: 290px;
 		}
 
 		.strap {
-			font-size: 1.22em;
+			font-size: 0.9em;
 		}
 
 		.daily-briefing {
-			font-size: 3.7em;
+			font-size: 3.2em;
 			margin-bottom: -10px;
 		}
 	}
 
 	@include large-desktop {
 		.date-line {
-			font-size: 1.2em;
+			font-size: 1em;
 		}
 
 		.logo {
-			width: 450px;
+			width: 320px;
 		}
 
 		.strap {
-			font-size: 1.38em;
+			font-size: 1em;
+			margin-bottom: 10px;
 		}
 
 		.daily-briefing {
-			font-size: 4.2em;
-			margin-bottom: -10px;
+			font-size: 3.5em;
+
 		}
 	}
 
