@@ -38,6 +38,10 @@
   font-family: knockFourtyNine;
   src: url("../fonts/Knockout49Liteweight-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: knockTwentyNine;
+  src: url("../fonts/Knockout-29JuniorLtweight.otf") format("opentype");
+}
 body {
   font-family: newsGothRegular;
   position: relative;

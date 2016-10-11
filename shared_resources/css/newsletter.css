@@ -38,6 +38,10 @@
   font-family: knockFourtyNine;
   src: url("../fonts/Knockout49Liteweight-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: knockTwentyNine;
+  src: url("../fonts/Knockout-29JuniorLtweight.otf") format("opentype");
+}
 body {
   font-family: newsGothRegular;
   position: relative;
@@ -85,11 +89,6 @@ h4 {
   text-align: center;
   background-color: #fff;
   color: #222222;
-  fill: #222222;
-}
-.header-wrapper .logo {
-  margin-left: auto;
-  margin-right: auto;
 }
 .header-wrapper .date-line {
   border-top: 1px solid #333;
@@ -100,6 +99,8 @@ h4 {
 }
 .header-wrapper .logo {
   width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 480px) {
   .header-wrapper .logo {
@@ -119,6 +120,100 @@ h4 {
 @media (min-width: 1200px) {
   .header-wrapper .logo {
     width: 450px;
+  }
+}
+
+.header-wrapper-masthead {
+  text-align: center;
+  margin-top: 18px;
+}
+.header-wrapper-masthead .date-line, .header-wrapper-masthead .daily-briefing {
+  font-family: glosaRegular;
+}
+.header-wrapper-masthead .date-line {
+  margin-bottom: 6px;
+  font-size: 1em;
+}
+.header-wrapper-masthead .daily-briefing {
+  letter-spacing: -1.5px;
+  font-size: 2.4em;
+}
+.header-wrapper-masthead .logo {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-wrapper-masthead .strap {
+  font-family: knockTwentyNine;
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.78em;
+  letter-spacing: 0.15em;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  margin-top: 8px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .header-wrapper-masthead .strap {
+    padding-top: 8px;
+  }
+}
+@media (min-width: 480px) {
+  .header-wrapper-masthead .date-line {
+    font-size: 1em;
+  }
+  .header-wrapper-masthead .logo {
+    width: 300px;
+  }
+  .header-wrapper-masthead .strap {
+    font-size: 0.92em;
+  }
+  .header-wrapper-masthead .daily-briefing {
+    font-size: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .header-wrapper-masthead .date-line {
+    font-size: 1.2em;
+  }
+  .header-wrapper-masthead .logo {
+    width: 350px;
+  }
+  .header-wrapper-masthead .strap {
+    font-size: 1.08em;
+  }
+  .header-wrapper-masthead .daily-briefing {
+    font-size: 3.4em;
+  }
+}
+@media (min-width: 992px) {
+  .header-wrapper-masthead .date-line {
+    font-size: 1.4em;
+  }
+  .header-wrapper-masthead .logo {
+    width: 400px;
+  }
+  .header-wrapper-masthead .strap {
+    font-size: 1.22em;
+  }
+  .header-wrapper-masthead .daily-briefing {
+    font-size: 3.7em;
+  }
+}
+@media (min-width: 1200px) {
+  .header-wrapper-masthead .date-line {
+    font-size: 1.5em;
+  }
+  .header-wrapper-masthead .logo {
+    width: 450px;
+  }
+  .header-wrapper-masthead .strap {
+    font-size: 1.38em;
+  }
+  .header-wrapper-masthead .daily-briefing {
+    font-size: 4.2em;
   }
 }
 
