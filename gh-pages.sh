@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "Pushing master"
+git push origin master
+
 echo "Checking out gh-pages"
 git checkout gh-pages
 
