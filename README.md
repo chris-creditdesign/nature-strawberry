@@ -1,4 +1,8 @@
-#Wireframe designs for Nature.com
+# Wireframe designs for Nature.com
+
+Nature homepage concepts. In progress mock-ups: July 2015
+
+View online at [http://chris-creditdesign.github.io/nature-strawberry/]().
 
 ### Build process
 
